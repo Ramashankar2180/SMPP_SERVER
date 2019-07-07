@@ -1,0 +1,279 @@
+/*
+ * 
+ *	cfg.def - definition of configuration groups and variables
+ * 
+ */
+
+#ifndef OCTSTR
+#error OCTSTR not defined.
+#endif
+
+#ifndef SINGLE_GROUP
+#error SINGLE_GROUP not defined.
+#endif
+
+#ifndef MULTI_GROUP
+#error MULTI_GROUP not defined.
+#endif
+
+
+/*CORE GROUP FOR SERVER AND DBBOX*/
+
+SINGLE_GROUP(core,
+		OCTSTR(dndcheck_flag)
+		OCTSTR(admin-port)				/*port for admin commands*/
+		OCTSTR(admin-password)			/*admin-password*/
+		OCTSTR(esme-file-path)
+		OCTSTR(dlr-storage)				/*type of dlr-storage*/
+		OCTSTR(log-file)				/*log file absolute path*/
+		OCTSTR(log-level)				/*log level - debug,1-info,2-warning,3-error,4-panic*/
+		OCTSTR(trans-mode-port)			/*listening port for tran mode*/
+		OCTSTR(recv-mode-port)			/*listening port for recv mode*/
+		OCTSTR(transrecv-mode-port)		/*listening port for tranrecv mode*/
+		OCTSTR(connect-allow-ip)		/*Client IPS which are allowed to connect to server*/
+		OCTSTR(connect-deny-ip)			/*Client IPS which are not allowed to connect to server*/
+		OCTSTR(global-allow-prefix)		/*allowed prefixes for destination number applicable to all accounts*/
+		OCTSTR(global-deny-prefix)		/*denied prefixes for destination number applicable to all accounts*/
+		OCTSTR(admin-interface)
+		OCTSTR(admin-password)			/*password for admin interface*/
+		OCTSTR(status-password)			/*password for knowing the status of the system*/
+		OCTSTR(admin-allow-ip)			/*implementation pending*/
+		OCTSTR(admin-deny-ip)			/*implementation pending*/	
+		OCTSTR(gsm-series)				/*prefixes for gsm numbers*/	
+	OCTSTR(cdma-series)				/*prefixes for cdma numbers*/	
+	OCTSTR(int-series)				/*series for international number*/	
+OCTSTR(default-series)			/*gsm/cdma/int - if above are not specfied specfies the default type
+					  of all destination number*/	
+	OCTSTR(access-log)				/*access file for server process*/
+	OCTSTR(dbbox-host)				/*IP of host*/
+	OCTSTR(dbbox-port)				/*listening port*/
+	OCTSTR(dbbox-reconnect-delay)	/*time duration between 2 reconnects - default 10*/
+	OCTSTR(smsc-host)				/*IP of host running client*/
+	OCTSTR(smsc-forward-port)		/*listening port for client connected - submit sm port*/
+	OCTSTR(smsc-reverse-port)		/*listening port for client - deliver sm port*/
+	OCTSTR(dbdata-port)	
+	OCTSTR(smsc-reconnect-delay)	/*time duration between 2 disconnects to client port*/
+	OCTSTR(dbbox-unconnect-q-limit)			/*no of msgs to be accepetd if dbbox gets disconnected - default -1*/
+	OCTSTR(smsc-unconnect-q-limit)			/*no of msgs to be accepted if smsc forward gets disconnected - default - 											-1*/
+	OCTSTR(dbbox-ping-delay)		/*duration after which ping will be sent to dbbox - default 10*/
+	OCTSTR(dbbox-pingack-timeout)	/*if ping is sent time to wait for ping ack before disconnecting*/
+	OCTSTR(dbbox-client-timeout)			/*disconnect dbbox client if not activity is on socket for this delay - default twice of ping - 30s (dbbox-ping-delay * dbbox-retry-limit)*/
+	OCTSTR(smsc-ping-delay)			/*duration after which ping will be sent to smsc process - default 10*/
+	OCTSTR(smsc-pingack-timeout)	/*if ping is sent time to wait for ping ack before disconnecting*/
+	OCTSTR(smsc-client-timeout)			/*disconnect dbbox client if not activity is on socket for this delay - defau									lt twice of ping - 30s (dbbox-ping-delay * dbbox-retry-limit)*/
+	OCTSTR(log-file-size)           /* [sanchal] [200309] */
+	OCTSTR(log-interval)            /* [sanchal] [200309] */
+	OCTSTR(access-log)
+	OCTSTR(access-log-time)
+	OCTSTR(access-log-format)
+OCTSTR(access-log-clean)
+
+	)
+
+
+
+	/*GROUP FOR SMPP CLIENT IS SIMILAR TO CORE GROUP FOR SMPP SERVER*/
+
+SINGLE_GROUP(SMPP-Client,
+		OCTSTR(admin-port)
+		OCTSTR(admin-interface)    
+		OCTSTR(admin-password)
+		OCTSTR(status-password)
+		OCTSTR(admin-deny-ip)
+		OCTSTR(admin-allow-ip)
+		OCTSTR(msg-retry-limit)
+		OCTSTR(sys-info-resend-freq)
+		OCTSTR(msg-resend-freq)
+		OCTSTR(compare-esm-smscid)
+		OCTSTR(msg-failed-log)
+		OCTSTR(max-msg-duration)	
+		OCTSTR(global-q-min)
+		OCTSTR(global-q-max)
+	    )
+
+	/*ACCOUNTS FOR SMPP CLIENTS IN SERVER CONFIG FILE*/
+MULTI_GROUP(smpp-client,			
+		OCTSTR(mode)					/*mode -tx,rx,txrx*/
+		OCTSTR(account-name)			/*unique account name*/
+		OCTSTR(password)				/*password for the account*/
+		OCTSTR(validfrom)				/*account starting date*/
+		OCTSTR(validto)					/*account expiry date*/
+		OCTSTR(enquire-link-interval)	/*enquire link interval to be used for this account*/
+		OCTSTR(log-file)				/*log file name*/
+		OCTSTR(log-level)
+		OCTSTR(account-allow-prefix)	/*prefixes allowed from this account*/
+		OCTSTR(account-deny-prefix)		/*prefixes denied from this account*/
+		OCTSTR(preferred-smsc)			/*preferred-smscs for the acoount*/
+		OCTSTR(dedicated-smsc)			/*dedicated smsc for the account*/
+		OCTSTR(rx-allowed)				/*If true RX bind is allowed with same account name and password*/
+		OCTSTR(max-submits-unconnect)   
+		OCTSTR(max-submits)   
+		OCTSTR(max-tps)   
+		OCTSTR(dnd-check)   
+		OCTSTR(rx-log-file)				/*log file for rx accounts*/
+		OCTSTR(max-tx-sessions)			/*max allowed tx sessions,will be applicable as trx*/
+		OCTSTR(max-rx-sessions)			/*max allowed rx sessions*/
+	OCTSTR(valid_time_from)			/*max allowed tx sessions,will be applicable as trx*/
+OCTSTR(valid_time_to)			/*max allowed rx sessions*/
+
+	)
+
+
+	/*SMSCs FOR CLIENT CONFIG FILE*/
+
+MULTI_GROUP(smsc,
+		OCTSTR(smsc)
+		OCTSTR(smsc-id)
+		OCTSTR(smsc-type)
+		OCTSTR(allowed-prefix)
+		OCTSTR(denied-prefix)
+		OCTSTR(log-file)
+		OCTSTR(log-level)
+		OCTSTR(our-host)
+		OCTSTR(alt-dcs)
+		OCTSTR(alt-charset)
+		OCTSTR(host)
+		OCTSTR(port)
+		OCTSTR(smsc-username)
+		OCTSTR(smsc-password)
+		OCTSTR(validityperiod)
+		OCTSTR(our-port)
+		OCTSTR(receive-port)
+		OCTSTR(connect-allow-ip)
+		OCTSTR(system-id)
+		OCTSTR(system-type)
+	OCTSTR(address-range)
+	OCTSTR(wait-ack)
+	OCTSTR(wait-ack-expire)
+	OCTSTR(source-addr-ton)
+	OCTSTR(source-addr-npi)
+	OCTSTR(dest-addr-ton)
+	OCTSTR(dest-addr-npi)
+	OCTSTR(bind-addr-ton)
+	OCTSTR(bind-addr-npi)
+	OCTSTR(service-type)
+	OCTSTR(source-addr-autodetect)
+	OCTSTR(enquire-link-interval)
+	OCTSTR(max-pending-submits)
+	OCTSTR(reconnect-delay)
+	OCTSTR(transceiver-mode)
+	OCTSTR(interface-version)
+	OCTSTR(priority)
+	OCTSTR(msg-id-type)
+	OCTSTR(connection-timeout)
+	OCTSTR(allowed-prefix-regex)
+	OCTSTR(denied-prefix-regex)
+	OCTSTR(alt-addr-charset)
+	OCTSTR(masking-prefix)
+	OCTSTR(tx-smsc-id)/*smsc id of tx which has sent the message this will be used in inserting into database*/
+	OCTSTR(deliver-sm-source)
+OCTSTR(max-q-len)		/*This parameter tells the max number of messages to be stored in an smsc q*/
+	)
+
+SINGLE_GROUP(testsmsc,
+		OCTSTR(smsc)
+		OCTSTR(smsc-id)
+		OCTSTR(log-file)
+		OCTSTR(log-level)
+		OCTSTR(host)
+		OCTSTR(port)
+		OCTSTR(smsc-username)
+		OCTSTR(smsc-password)
+		OCTSTR(receive-port)
+		OCTSTR(system-type)
+		OCTSTR(address-range)
+		OCTSTR(source-addr-ton)
+		OCTSTR(source-addr-npi)
+		OCTSTR(dest-addr-ton)
+		OCTSTR(dest-addr-npi)
+		OCTSTR(service-type)
+		OCTSTR(enquire-link-interval)
+		OCTSTR(transceiver-mode)
+		OCTSTR(interface-version)
+		OCTSTR(input-file)
+	OCTSTR(global-sender)
+	OCTSTR(global-receiver)
+	OCTSTR(core-file)
+	OCTSTR(max-messages)
+OCTSTR(global-text)
+	)
+
+
+
+	/*DATABASE DETAILS FOR DBBOX CONFIG FILE*/
+MULTI_GROUP(mysql-connection,
+		OCTSTR(id)
+		OCTSTR(host)
+		OCTSTR(port)
+		OCTSTR(username)
+		OCTSTR(password)
+		OCTSTR(database)
+		OCTSTR(socket)
+		OCTSTR(max-connections)    
+	   )
+
+	/*GROUP FOR MAPPING TABLE FOR DBBOX CONFIG FILE*/
+SINGLE_GROUP(dlr-db,
+		OCTSTR(id)
+		OCTSTR(table)
+		OCTSTR(field-EsmeAccountName)
+		OCTSTR(field-EsmeMsgId)
+		OCTSTR(field-SmscId)
+		OCTSTR(field-SmscMsgId)
+		OCTSTR(field-DatetimeSubmit)
+	    )
+
+	/*GROUP FOR MIS TABLE FOR DBBOX CONFIG FILE*/
+SINGLE_GROUP(dlr-db-mis,
+		OCTSTR(id)
+		OCTSTR(table)
+		OCTSTR(field-EsmeAccountName)
+		OCTSTR(field-EsmeMsgId)
+		OCTSTR(field-SmscId)
+		OCTSTR(field-SmscMsgId)
+		OCTSTR(field-SubmitStat)
+		OCTSTR(field-DatetimeRecv)
+		OCTSTR(field-DatetimeSubmit)
+		OCTSTR(field-SourceAddr)
+		OCTSTR(field-DestAddr)
+		OCTSTR(field-MsgContent)
+		OCTSTR(field-UDH)
+		OCTSTR(field-RetryValue)
+		OCTSTR(field-client-ip)
+	    )
+
+
+SINGLE_GROUP(dlr-db-status,
+		OCTSTR(id)
+		OCTSTR(table)
+		OCTSTR(field-SmscId)
+		OCTSTR(field-SmscMsgId)
+		OCTSTR(field-DestAddr)
+		OCTSTR(field-DelieverStat)
+		OCTSTR(field-DatetimeDeliver)	
+	    )
+
+SINGLE_GROUP(dlr-db-smpp-esme,
+		OCTSTR(id)
+		OCTSTR(table)
+		OCTSTR(field-EsmeAccountName)
+		OCTSTR(field-EsmeMsgId)
+		OCTSTR(field-SubmitStat)
+		OCTSTR(field-DatetimeRecv)
+		OCTSTR(field-SourceAddr)
+		OCTSTR(field-DestAddr)
+		OCTSTR(field-MsgContent)
+		OCTSTR(field-UDH)
+		OCTSTR(field-RetryValue)
+		OCTSTR(allowed_smsc)
+		OCTSTR(field-dnd-flag)
+		OCTSTR(preferred_smsc)
+		OCTSTR(field-data-coding)
+		OCTSTR(field-esm-class)
+		OCTSTR(field-more-messages-to-send)
+	    )
+
+
+#undef OCTSTR
+#undef SINGLE_GROUP
+#undef MULTI_GROUP

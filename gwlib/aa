@@ -1,0 +1,34 @@
+Binary file accesslog.o matches
+az:gwmem.h:#define gw_malloc(size) (gw_native_malloc(size))
+az:gwmem.h:#define gw_malloc_trace(size, file, line, func) (gw_native_malloc(size))
+Binary file cfg.o matches
+Binary file charset.o matches
+Binary file conn.o matches
+Binary file counter.o matches
+Binary file dbpool.o matches
+Binary file dict.o matches
+Binary file fdset.o matches
+gwmem.h:void *gw_native_malloc(size_t size);
+gwmem.h:#define gw_malloc(size) (gw_native_malloc(size))
+gwmem.h:#define gw_malloc_trace(size, file, line, func) (gw_native_malloc(size))
+gwmem-native.c:void *gw_native_malloc(size_t size)
+gwmem-native.c:    copy = gw_native_malloc(strlen(str) + 1);
+Binary file gwmem-native.o matches
+Binary file gw-prioqueue.o matches
+Binary file gw-rwlock.o matches
+Binary file gwthread-pthread.o matches
+Binary file http.o matches
+Binary file list.o matches
+Binary file log.o matches
+Binary file mime.o matches
+Binary file msgq.o matches
+Binary file octstr.o matches
+Binary file parse.o matches
+Binary file process_sock.o matches
+Binary file protected.o matches
+Binary file regex.o matches
+Binary file semaphore.o matches
+Binary file smpp_pdu.o matches
+Binary file socket.o matches
+Binary file thread.o matches
+Binary file xmlrpc.o matches
