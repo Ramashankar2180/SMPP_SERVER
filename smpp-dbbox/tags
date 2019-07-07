@@ -1,0 +1,253 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+DLR_BUFFERED	dlr.h	75;"	d
+DLR_FAIL	dlr.h	74;"	d
+DLR_H	dlr.h	67;"	d
+DLR_IS_BUFFERED	dlr.h	86;"	d
+DLR_IS_DEFINED	dlr.h	79;"	d
+DLR_IS_ENABLED	dlr.h	80;"	d
+DLR_IS_ENABLED_DEVICE	dlr.h	81;"	d
+DLR_IS_ENABLED_SMSC	dlr.h	82;"	d
+DLR_IS_FAIL	dlr.h	85;"	d
+DLR_IS_SMSC_FAIL	dlr.h	88;"	d
+DLR_IS_SMSC_SUCCESS	dlr.h	87;"	d
+DLR_IS_SUCCESS	dlr.h	84;"	d
+DLR_IS_SUCCESS_OR_FAIL	dlr.h	83;"	d
+DLR_NOTHING	dlr.h	72;"	d
+DLR_P_H	dlr_p.h	69;"	d
+DLR_SMSC_FAIL	dlr.h	77;"	d
+DLR_SMSC_SUCCESS	dlr.h	76;"	d
+DLR_SUCCESS	dlr.h	73;"	d
+DLR_TRACE	dlr_p.h	73;"	d
+DLR_UNDEFINED	dlr.h	71;"	d
+NO_OF_COLS	create_table.c	10;"	d	file:
+NO_OF_COLS	mis_create_table.c	10;"	d	file:
+NO_OF_COLS	status_create_table.c	10;"	d	file:
+NO_OF_COLS	summary_create_table.c	10;"	d	file:
+O_DELETE	dlr.c	141;"	d	file:
+O_DELETE	dlr.c	150;"	d	file:
+O_DELETE	dlr.c	213;"	d	file:
+O_DELETE	dlr.c	230;"	d	file:
+O_DELETE	dlr.c	270;"	d	file:
+O_DELETE	dlr.c	278;"	d	file:
+O_DELETE	dlr.c	575;"	d	file:
+O_DELETE	dlr.c	587;"	d	file:
+O_DELETE	dlr.c	87;"	d	file:
+O_DELETE	dlr.c	94;"	d	file:
+PROGRAM_DEAD	dbbox.h	/^    PROGRAM_DEAD = 4,$/;"	e
+PROGRAM_FULL	dbbox.h	/^    PROGRAM_FULL = 5         \/* message queue too long, do not accept new messages *\/$/;"	e
+PROGRAM_ISOLATED	dbbox.h	/^    PROGRAM_ISOLATED = 1,	\/* do not receive new messgaes from UDP\/SMSC *\/$/;"	e
+PROGRAM_RUNNING	dbbox.h	/^    PROGRAM_RUNNING = 0,$/;"	e
+PROGRAM_SHUTDOWN	dbbox.h	/^    PROGRAM_SHUTDOWN = 3,$/;"	e
+PROGRAM_SUSPENDED	dbbox.h	/^    PROGRAM_SUSPENDED = 2,	\/* do not transfer any messages *\/$/;"	e
+SW_VERSION	create_table.c	9;"	d	file:
+SW_VERSION	mis_create_table.c	9;"	d	file:
+SW_VERSION	status_create_table.c	9;"	d	file:
+SW_VERSION	summary_create_table.c	9;"	d	file:
+account_msg_id	dlr.h	/^	Octstr *account_msg_id;$/;"	m	struct:get_account_info
+account_msg_id	dlr_p.h	/^	Octstr *account_msg_id;$/;"	m	struct:dlr_entry
+account_msg_id	dlr_p.h	/^	Octstr *account_msg_id;$/;"	m	struct:dlr_get_deliver_info
+account_name	dlr.h	/^	Octstr *account_name;$/;"	m	struct:get_account_info
+account_name	dlr_p.h	/^	Octstr *account_name;$/;"	m	struct:dlr_entry
+account_name	dlr_p.h	/^	Octstr *account_name;$/;"	m	struct:dlr_get_deliver_info
+arg_table_name	mis_create_table.c	/^char *arg_table_name=NULL;$/;"	v
+arg_table_name	status_create_table.c	/^char *arg_table_name=NULL;$/;"	v
+cfg	smpp_dbbox.c	/^Cfg *cfg;$/;"	v
+check_args	smpp_dbbox.c	/^static int check_args(int i, int argc, char **argv) $/;"	f	file:
+clientid	create_table.c	/^char *clientid=NULL;$/;"	v
+clientid	mis_create_table.c	/^char *clientid=NULL;$/;"	v
+clientid	status_create_table.c	/^char *clientid=NULL;$/;"	v
+clientid	summary_create_table.c	/^char *clientid=NULL;$/;"	v
+command	dbbox_httpadmin.c	/^    const char *command;$/;"	m	struct:httpd_command	file:
+count_lock	smpp_dbbox.c	/^pthread_mutex_t count_lock;$/;"	v
+db_name	create_table.c	/^char *db_name=NULL;$/;"	v
+db_name	mis_create_table.c	/^char *db_name=NULL;$/;"	v
+db_name	status_create_table.c	/^char *db_name=NULL;$/;"	v
+db_name	summary_create_table.c	/^char *db_name=NULL;$/;"	v
+dbbox_get_status_name	dbbox_httpadmin.c	/^char* dbbox_get_status_name(sig_atomic_t program_status)$/;"	f
+dbbox_httpadmin_start	dbbox_httpadmin.c	/^int dbbox_httpadmin_start(Cfg *cfg)$/;"	f
+dbbox_httpadmin_stop	dbbox_httpadmin.c	/^void dbbox_httpadmin_stop(void)$/;"	f
+dbbox_shutdown	smpp_dbbox.c	/^void dbbox_shutdown()$/;"	f
+dlr_add	dlr.c	/^void dlr_add(Octstr *account_name,Octstr *account_msg_id, Octstr* smsc_id,Octstr*smsc_msg_id)$/;"	f
+dlr_add	dlr_p.h	/^    void (*dlr_add) (struct dlr_entry *entry);$/;"	m	struct:dlr_storage
+dlr_check_conn	dlr.c	/^void dlr_check_conn(void)$/;"	f
+dlr_check_conn	dlr_p.h	/^	void (*dlr_check_conn) (void);    $/;"	m	struct:dlr_storage
+dlr_db_fields	dlr_p.h	/^struct dlr_db_fields$/;"	s
+dlr_db_fields_create	dlr.c	/^struct dlr_db_fields *dlr_db_fields_create(CfgGroup *grp)$/;"	f
+dlr_db_fields_create_mis	dlr.c	/^struct dlr_db_mis_fields *dlr_db_fields_create_mis(CfgGroup *grp)$/;"	f
+dlr_db_fields_create_smpp_esme	dlr.c	/^struct dlr_db_smpp_esme_fields *dlr_db_fields_create_smpp_esme(CfgGroup *grp)$/;"	f
+dlr_db_fields_create_status	dlr.c	/^struct dlr_db_status_fields *dlr_db_fields_create_status(CfgGroup *grp)$/;"	f
+dlr_db_fields_destroy	dlr.c	/^void dlr_db_fields_destroy(struct dlr_db_fields *fields)$/;"	f
+dlr_db_fields_destroy_mis	dlr.c	/^void dlr_db_fields_destroy_mis(struct dlr_db_mis_fields *fields)$/;"	f
+dlr_db_fields_destroy_smpp_esme	dlr.c	/^void dlr_db_fields_destroy_smpp_esme(struct dlr_db_smpp_esme_fields *fields)$/;"	f
+dlr_db_fields_destroy_status	dlr.c	/^void dlr_db_fields_destroy_status(struct dlr_db_status_fields *fields)$/;"	f
+dlr_db_mis_fields	dlr_p.h	/^struct dlr_db_mis_fields$/;"	s
+dlr_db_smpp_esme_fields	dlr_p.h	/^struct dlr_db_smpp_esme_fields$/;"	s
+dlr_db_status_fields	dlr_p.h	/^struct dlr_db_status_fields$/;"	s
+dlr_entry	dlr_p.h	/^struct dlr_entry$/;"	s
+dlr_entry_create	dlr.c	/^struct dlr_entry *dlr_entry_create(void)$/;"	f
+dlr_entry_destroy	dlr.c	/^void dlr_entry_destroy(struct dlr_entry *dlr)$/;"	f
+dlr_entry_duplicate	dlr.c	/^struct dlr_entry *dlr_entry_duplicate(const struct dlr_entry *dlr)$/;"	f
+dlr_find	dlr.c	/^Conn_Msg *dlr_find(const Octstr *dest_addr,const Octstr *smscmsgid)$/;"	f
+dlr_flush	dlr.c	/^void dlr_flush(void)$/;"	f
+dlr_flush	dlr_p.h	/^    void (*dlr_flush) (void);\/*Flush storage*\/$/;"	m	struct:dlr_storage
+dlr_get	dlr_p.h	/^	Conn_Msg* (*dlr_get)(const Octstr *smsc_id,const Octstr *smscmsgid);$/;"	m	struct:dlr_storage
+dlr_get_deliver_info	dlr_p.h	/^struct dlr_get_deliver_info$/;"	s
+dlr_init	dlr.c	/^void dlr_init(Cfg* cfg)$/;"	f
+dlr_init_mysql	dlr_mysql.c	/^struct dlr_storage *dlr_init_mysql(Cfg *cfg)$/;"	f
+dlr_init_mysql	dlr_mysql.c	/^struct dlr_storage *dlr_init_mysql(Cfg* cfg)$/;"	f
+dlr_messages	dlr.c	/^long dlr_messages(void)$/;"	f
+dlr_messages	dlr_p.h	/^    long (*dlr_messages) (void);\/*Return count dlr entries in storage.*\/$/;"	m	struct:dlr_storage
+dlr_mis_add	dlr.c	/^void dlr_mis_add(Conn_Msg *msg)$/;"	f
+dlr_mis_add	dlr_p.h	/^	void (*dlr_mis_add)(Conn_Msg *msg);$/;"	m	struct:dlr_storage
+dlr_mysql_add	dlr_mysql.c	/^void dlr_mysql_add(struct dlr_entry *entry)$/;"	f
+dlr_mysql_check_conn	dlr_mysql.c	/^void dlr_mysql_check_conn(void)$/;"	f
+dlr_mysql_flush	dlr_mysql.c	/^static void dlr_mysql_flush(void)$/;"	f	file:
+dlr_mysql_get	dlr_mysql.c	/^Conn_Msg* dlr_mysql_get(const Octstr *dest_addr, const Octstr *smsc_msg_id)$/;"	f
+dlr_mysql_messages	dlr_mysql.c	/^static long dlr_mysql_messages(void)$/;"	f	file:
+dlr_mysql_mis_add	dlr_mysql.c	/^void dlr_mysql_mis_add(Conn_Msg *msg)$/;"	f
+dlr_mysql_remove	dlr_mysql.c	/^static void dlr_mysql_remove(const Octstr *smsc_id,const Octstr *smscmsgid)$/;"	f	file:
+dlr_mysql_shutdown	dlr_mysql.c	/^static void dlr_mysql_shutdown()$/;"	f	file:
+dlr_mysql_status_add	dlr_mysql.c	/^void dlr_mysql_status_add(Conn_Msg *msg)$/;"	f
+dlr_remove	dlr.c	/^void dlr_remove(const Octstr *smsc_id,const Octstr *smscmsgid)$/;"	f
+dlr_remove	dlr_p.h	/^	void (*dlr_remove)(const Octstr *smsc_id,const Octstr *smscmsgid);$/;"	m	struct:dlr_storage
+dlr_shutdown	dlr.c	/^void dlr_shutdown()$/;"	f
+dlr_shutdown	dlr_p.h	/^	void (*dlr_shutdown) (void);\/*Shutdown storage*\/    $/;"	m	struct:dlr_storage
+dlr_smpp_esme	dlr.c	/^void dlr_smpp_esme(Conn_Msg *msg)$/;"	f
+dlr_smpp_esme	dlr_p.h	/^	void (*dlr_smpp_esme)(Conn_Msg *msg);$/;"	m	struct:dlr_storage
+dlr_smpp_esme_add	dlr_mysql.c	/^void dlr_smpp_esme_add(Conn_Msg *msg)$/;"	f
+dlr_status_add	dlr.c	/^void dlr_status_add(Conn_Msg *msg)$/;"	f
+dlr_status_add	dlr_p.h	/^	void (*dlr_status_add)(Conn_Msg *msg);$/;"	m	struct:dlr_storage
+dlr_storage	dlr_p.h	/^struct dlr_storage $/;"	s
+dlr_type	dlr.c	/^const char* dlr_type(void)$/;"	f
+field_account_msg_id	dlr_p.h	/^	Octstr *field_account_msg_id;$/;"	m	struct:dlr_db_fields
+field_account_msg_id	dlr_p.h	/^	Octstr *field_account_msg_id;$/;"	m	struct:dlr_db_mis_fields
+field_account_msg_id	dlr_p.h	/^	Octstr *field_account_msg_id;$/;"	m	struct:dlr_db_smpp_esme_fields
+field_account_name	dlr_p.h	/^	Octstr *field_account_name;$/;"	m	struct:dlr_db_fields
+field_account_name	dlr_p.h	/^	Octstr *field_account_name;$/;"	m	struct:dlr_db_mis_fields
+field_account_name	dlr_p.h	/^	Octstr *field_account_name;$/;"	m	struct:dlr_db_smpp_esme_fields
+field_deliver_status	dlr_p.h	/^	Octstr *field_deliver_status;$/;"	m	struct:dlr_db_status_fields
+field_deliver_time	dlr_p.h	/^	Octstr *field_deliver_time;$/;"	m	struct:dlr_db_status_fields
+field_dest_addr	dlr_p.h	/^	Octstr *field_dest_addr;$/;"	m	struct:dlr_db_mis_fields
+field_dest_addr	dlr_p.h	/^	Octstr *field_dest_addr;$/;"	m	struct:dlr_db_smpp_esme_fields
+field_dest_addr	dlr_p.h	/^	Octstr *field_dest_addr;$/;"	m	struct:dlr_db_status_fields
+field_msg_content	dlr_p.h	/^	Octstr *field_msg_content;	$/;"	m	struct:dlr_db_mis_fields
+field_msg_content	dlr_p.h	/^	Octstr *field_msg_content;	$/;"	m	struct:dlr_db_smpp_esme_fields
+field_msg_submit_time	dlr_p.h	/^	Octstr *field_msg_submit_time; $/;"	m	struct:dlr_db_fields
+field_recv_time	dlr_p.h	/^	Octstr *field_recv_time;$/;"	m	struct:dlr_db_mis_fields
+field_recv_time	dlr_p.h	/^	Octstr *field_recv_time;$/;"	m	struct:dlr_db_smpp_esme_fields
+field_retry_value	dlr_p.h	/^	Octstr *field_retry_value;$/;"	m	struct:dlr_db_mis_fields
+field_retry_value	dlr_p.h	/^	Octstr *field_retry_value;$/;"	m	struct:dlr_db_smpp_esme_fields
+field_smsc_id	dlr_p.h	/^	Octstr *field_smsc_id;$/;"	m	struct:dlr_db_fields
+field_smsc_id	dlr_p.h	/^	Octstr *field_smsc_id;$/;"	m	struct:dlr_db_mis_fields
+field_smsc_id	dlr_p.h	/^	Octstr *field_smsc_id;$/;"	m	struct:dlr_db_status_fields
+field_smsc_msg_id	dlr_p.h	/^	Octstr *field_smsc_msg_id;$/;"	m	struct:dlr_db_fields
+field_smsc_msg_id	dlr_p.h	/^	Octstr *field_smsc_msg_id;$/;"	m	struct:dlr_db_mis_fields
+field_smsc_msg_id	dlr_p.h	/^	Octstr *field_smsc_msg_id;$/;"	m	struct:dlr_db_status_fields
+field_source_addr	dlr_p.h	/^	Octstr *field_source_addr;$/;"	m	struct:dlr_db_mis_fields
+field_source_addr	dlr_p.h	/^	Octstr *field_source_addr;$/;"	m	struct:dlr_db_smpp_esme_fields
+field_submit_status	dlr_p.h	/^	Octstr *field_submit_status;$/;"	m	struct:dlr_db_mis_fields
+field_submit_status	dlr_p.h	/^	Octstr *field_submit_status;$/;"	m	struct:dlr_db_smpp_esme_fields
+field_submit_time	dlr_p.h	/^	Octstr *field_submit_time; $/;"	m	struct:dlr_db_mis_fields
+field_udh	dlr_p.h	/^	Octstr *field_udh;	$/;"	m	struct:dlr_db_mis_fields
+field_udh	dlr_p.h	/^	Octstr *field_udh;	$/;"	m	struct:dlr_db_smpp_esme_fields
+fields	dlr_mysql.c	/^static struct dlr_db_fields *fields = NULL;$/;"	v	file:
+fields	mis_create_table.c	/^char *fields[] =  	{	"SNo int",$/;"	v
+fields	status_create_table.c	/^char *fields[] =  	{	"SNo int",$/;"	v
+fields_mis	dlr_mysql.c	/^static struct dlr_db_mis_fields *fields_mis = NULL;$/;"	v	file:
+fields_smpp_esme	dlr_mysql.c	/^static struct dlr_db_smpp_esme_fields *fields_smpp_esme = NULL;$/;"	v	file:
+fields_status	dlr_mysql.c	/^static struct dlr_db_status_fields *fields_status = NULL;$/;"	v	file:
+filename	smpp_dbbox.c	/^static Octstr *filename;$/;"	v	file:
+function	dbbox_httpadmin.c	/^    Octstr * (*function)(List *cgivars, int status_type);$/;"	m	struct:httpd_command	file:
+get_account_info	dlr.h	/^struct get_account_info$/;"	s
+giLogSize	smpp_dbbox.c	/^long giLogSize;$/;"	v
+giManagelogInterval	smpp_dbbox.c	/^int giManagelogInterval;$/;"	v
+ha_allow_ip	dbbox_httpadmin.c	/^static Octstr *ha_allow_ip;$/;"	v	file:
+ha_deny_ip	dbbox_httpadmin.c	/^static Octstr *ha_deny_ip;$/;"	v	file:
+ha_interface	dbbox_httpadmin.c	/^static Octstr *ha_interface;$/;"	v	file:
+ha_password	dbbox_httpadmin.c	/^static Octstr *ha_password;$/;"	v	file:
+ha_port	dbbox_httpadmin.c	/^static long	ha_port;$/;"	v	file:
+ha_status_pw	dbbox_httpadmin.c	/^static Octstr *ha_status_pw;$/;"	v	file:
+handle_request	smpp_dbbox.c	/^void handle_request(Conn_Msg *msg,PROCESS_CLIENT *process_client)$/;"	f
+handles	dlr.c	/^static struct dlr_storage *handles = NULL;$/;"	v	file:
+handles	dlr_mysql.c	/^static struct dlr_storage handles = $/;"	v	file:
+host_name	create_table.c	/^char *host_name=NULL;$/;"	v
+host_name	mis_create_table.c	/^char *host_name=NULL;$/;"	v
+host_name	status_create_table.c	/^char *host_name=NULL;$/;"	v
+host_name	summary_create_table.c	/^char *host_name=NULL;$/;"	v
+httpadmin_run	dbbox_httpadmin.c	/^static void httpadmin_run(void *arg)$/;"	f	file:
+httpadmin_running	dbbox_httpadmin.c	/^static volatile sig_atomic_t httpadmin_running;$/;"	v	file:
+httpd_check_authorization	dbbox_httpadmin.c	/^static Octstr *httpd_check_authorization(List *cgivars, int status)$/;"	f	file:
+httpd_check_status	dbbox_httpadmin.c	/^static Octstr *httpd_check_status(void)$/;"	f	file:
+httpd_command	dbbox_httpadmin.c	/^static struct httpd_command {$/;"	s	file:
+httpd_commands	dbbox_httpadmin.c	/^} httpd_commands[] = {$/;"	v	file:
+httpd_dbbox_status	dbbox_httpadmin.c	/^Octstr *httpd_dbbox_status(List *cgivars, int status_type)$/;"	f
+httpd_serve	dbbox_httpadmin.c	/^static void httpd_serve(HTTPClient *client, Octstr *ourl, List *headers,$/;"	f	file:
+httpd_shutdown	dbbox_httpadmin.c	/^Octstr *httpd_shutdown(List *cgivars, int status_type)$/;"	f
+httpd_version	dbbox_httpadmin.c	/^static Octstr *httpd_version(List *cgivars, int status_type)$/;"	f	file:
+kannel_instance	smpp_dbbox.c	/^static Octstr *kannel_instance = NULL;$/;"	v	file:
+log_file_index	smpp_dbbox.c	/^long log_file_index;$/;"	v
+main	create_table.c	/^int main(int argc, char **argv)$/;"	f
+main	mis_create_table.c	/^int main(int argc, char **argv)$/;"	f
+main	smpp_dbbox.c	/^int main(int argc, char **argv)$/;"	f
+main	status_create_table.c	/^int main(int argc, char **argv)$/;"	f
+main	summary_create_table.c	/^int main(int argc, char **argv)$/;"	f
+main_thread	smpp_dbbox.c	/^void main_thread(Cfg *cfg)$/;"	f
+manage_log	smpp_dbbox.c	/^void manage_log(Cfg *cfg)$/;"	f
+master_thread_id	smpp_dbbox.c	/^static long master_thread_id;$/;"	v	file:
+msg_submit_time	dlr_p.h	/^	Octstr *msg_submit_time;	$/;"	m	struct:dlr_entry
+mysql_escape	dlr_mysql.c	/^char* mysql_escape(const char *from_str)$/;"	f
+mysql_select	dlr_mysql.c	/^static MYSQL_RES* mysql_select(const Octstr *sql)$/;"	f	file:
+mysql_update	dlr_mysql.c	/^static void mysql_update(const Octstr *sql)$/;"	f	file:
+mysql_update_counter	dlr_mysql.c	/^long mysql_update_counter(const Octstr *sql)$/;"	f
+opt_flags	create_table.c	/^unsigned int opt_flags=0;$/;"	v
+opt_flags	mis_create_table.c	/^unsigned int opt_flags=0;$/;"	v
+opt_flags	status_create_table.c	/^unsigned int opt_flags=0;$/;"	v
+opt_flags	summary_create_table.c	/^unsigned int opt_flags=0;$/;"	v
+opt_port_num	create_table.c	/^unsigned int opt_port_num=0;$/;"	v
+opt_port_num	mis_create_table.c	/^unsigned int opt_port_num=0;$/;"	v
+opt_port_num	status_create_table.c	/^unsigned int opt_port_num=0;$/;"	v
+opt_port_num	summary_create_table.c	/^unsigned int opt_port_num=0;$/;"	v
+password	create_table.c	/^char *password=NULL;$/;"	v
+password	mis_create_table.c	/^char *password=NULL;$/;"	v
+password	status_create_table.c	/^char *password=NULL;$/;"	v
+password	summary_create_table.c	/^char *password=NULL;$/;"	v
+pool	dlr_mysql.c	/^static DBPool *pool = NULL;$/;"	v	file:
+port_num	smpp_dbbox.c	/^long port_num = -1;$/;"	v
+print_dbbox_status	smpp_dbbox.c	/^Octstr *print_dbbox_status(int status_type)$/;"	f
+process_program_status	smpp_dbbox.c	/^volatile enum process_program_status process_program_status = starting_up;$/;"	v
+process_start_time	smpp_dbbox.c	/^static time_t process_start_time;$/;"	v	file:
+program_status	smpp_dbbox.c	/^volatile sig_atomic_t program_status;$/;"	v
+sem_update_allowed	smpp_dbbox.c	/^Semaphore *sem_update_allowed;$/;"	v
+server_data	smpp_dbbox.c	/^SERVER_DATA *server_data;$/;"	v
+setup_signal_handlers	smpp_dbbox.c	/^static void setup_signal_handlers(void)$/;"	f	file:
+signal_handler	smpp_dbbox.c	/^static void signal_handler(int signum)$/;"	f	file:
+smsc_id	dlr_p.h	/^	Octstr *smsc_id;$/;"	m	struct:dlr_entry
+smsc_msg_id	dlr_p.h	/^	Octstr *smsc_msg_id;$/;"	m	struct:dlr_entry
+socket_name	create_table.c	/^char *socket_name=NULL;$/;"	v
+socket_name	mis_create_table.c	/^char *socket_name=NULL;$/;"	v
+socket_name	status_create_table.c	/^char *socket_name=NULL;$/;"	v
+socket_name	summary_create_table.c	/^char *socket_name=NULL;$/;"	v
+status_table_name	mis_create_table.c	/^char status_table_name[50];$/;"	v
+status_table_name	status_create_table.c	/^char status_table_name[50];$/;"	v
+table	create_table.c	/^char *table[] =  	{	"SNo int primary key auto_increment,",$/;"	v
+table	dlr_p.h	/^	Octstr *table;$/;"	m	struct:dlr_db_fields
+table	dlr_p.h	/^	Octstr *table;$/;"	m	struct:dlr_db_mis_fields
+table	dlr_p.h	/^	Octstr *table;$/;"	m	struct:dlr_db_smpp_esme_fields
+table	dlr_p.h	/^	Octstr *table;$/;"	m	struct:dlr_db_status_fields
+table	mis_create_table.c	/^char *table[] =  	{	"SNo int primary key auto_increment,",$/;"	v
+table	status_create_table.c	/^char *table[] =  	{	"SNo int primary key auto_increment,",$/;"	v
+table	summary_create_table.c	/^char *table[] =  	{	"SNo int primary key auto_increment,",$/;"	v
+table_name	create_table.c	/^char *table_name=NULL;$/;"	v
+table_name	mis_create_table.c	/^char table_name[50];$/;"	v
+table_name	status_create_table.c	/^char table_name[50];$/;"	v
+table_name	summary_create_table.c	/^char *table_name=NULL;$/;"	v
+type	dlr_p.h	/^    const char* type;\/*Type of storage. Used for status reguest.*\/$/;"	m	struct:dlr_storage
+user_name	create_table.c	/^char *user_name=NULL;$/;"	v
+user_name	mis_create_table.c	/^char *user_name=NULL;$/;"	v
+user_name	status_create_table.c	/^char *user_name=NULL;$/;"	v
+user_name	summary_create_table.c	/^char *user_name=NULL;$/;"	v

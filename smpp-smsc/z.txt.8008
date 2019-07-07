@@ -1,0 +1,121 @@
+==8008== Memcheck, a memory error detector.
+==8008== Copyright (C) 2002-2005, and GNU GPL'd, by Julian Seward et al.
+==8008== Using LibVEX rev 1575, a library for dynamic binary translation.
+==8008== Copyright (C) 2004-2005, and GNU GPL'd, by OpenWorks LLP.
+==8008== Using valgrind-3.1.1, a dynamic binary instrumentation framework.
+==8008== Copyright (C) 2000-2005, and GNU GPL'd, by Julian Seward et al.
+==8008== For more details, rerun with: -v
+==8008== 
+==8008== My PID = 8008, parent PID = 6024.  Prog and args are:
+==8008==    ./smpp_smsc
+==8008==    -v
+==8008==    0
+==8008==    smpp-smsc.conf
+==8008== 
+==8008== Thread 9:
+==8008== Conditional jump or move depends on uninitialised value(s)
+==8008==    at 0x8077F06: octstr_dump_real (octstr.c:2219)
+==8008==    by 0x8078596: octstr_dump_short (octstr.c:2282)
+==8008==    by 0x8089A11: smpp_pdu_dump (smpp_pdu.def:206)
+==8008==    by 0x8058C6D: send_pdu (smsc_smpp.c:420)
+==8008==    by 0x8058D6F: send_messages (smsc_smpp.c:523)
+==8008==    by 0x805A6B0: io_thread (smsc_smpp.c:1364)
+==8008==    by 0x8067C2A: new_thread (gwthread-pthread.c:363)
+==8008==    by 0x952370: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==8008==    by 0x8BCFFD: clone (in /lib/tls/libc-2.3.4.so)
+==8008== 
+==8008== Conditional jump or move depends on uninitialised value(s)
+==8008==    at 0x8077F08: octstr_dump_real (octstr.c:2219)
+==8008==    by 0x8078596: octstr_dump_short (octstr.c:2282)
+==8008==    by 0x8089A11: smpp_pdu_dump (smpp_pdu.def:206)
+==8008==    by 0x8058C6D: send_pdu (smsc_smpp.c:420)
+==8008==    by 0x8058D6F: send_messages (smsc_smpp.c:523)
+==8008==    by 0x805A6B0: io_thread (smsc_smpp.c:1364)
+==8008==    by 0x8067C2A: new_thread (gwthread-pthread.c:363)
+==8008==    by 0x952370: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==8008==    by 0x8BCFFD: clone (in /lib/tls/libc-2.3.4.so)
+==8008== 
+==8008== Conditional jump or move depends on uninitialised value(s)
+==8008==    at 0x8077F0D: octstr_dump_real (octstr.c:2219)
+==8008==    by 0x8078596: octstr_dump_short (octstr.c:2282)
+==8008==    by 0x8089A11: smpp_pdu_dump (smpp_pdu.def:206)
+==8008==    by 0x8058C6D: send_pdu (smsc_smpp.c:420)
+==8008==    by 0x8058D6F: send_messages (smsc_smpp.c:523)
+==8008==    by 0x805A6B0: io_thread (smsc_smpp.c:1364)
+==8008==    by 0x8067C2A: new_thread (gwthread-pthread.c:363)
+==8008==    by 0x952370: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==8008==    by 0x8BCFFD: clone (in /lib/tls/libc-2.3.4.so)
+==8008== 
+==8008== Conditional jump or move depends on uninitialised value(s)
+==8008==    at 0x8077F16: octstr_dump_real (octstr.c:2219)
+==8008==    by 0x8078596: octstr_dump_short (octstr.c:2282)
+==8008==    by 0x8089A11: smpp_pdu_dump (smpp_pdu.def:206)
+==8008==    by 0x8058C6D: send_pdu (smsc_smpp.c:420)
+==8008==    by 0x8058D6F: send_messages (smsc_smpp.c:523)
+==8008==    by 0x805A6B0: io_thread (smsc_smpp.c:1364)
+==8008==    by 0x8067C2A: new_thread (gwthread-pthread.c:363)
+==8008==    by 0x952370: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==8008==    by 0x8BCFFD: clone (in /lib/tls/libc-2.3.4.so)
+==8008== 
+==8008== Conditional jump or move depends on uninitialised value(s)
+==8008==    at 0x8077F06: octstr_dump_real (octstr.c:2219)
+==8008==    by 0x8078596: octstr_dump_short (octstr.c:2282)
+==8008==    by 0x808A84A: smpp_pdu_dump (smpp_pdu.def:318)
+==8008==    by 0x805A506: io_thread (smsc_smpp.c:1320)
+==8008==    by 0x8067C2A: new_thread (gwthread-pthread.c:363)
+==8008==    by 0x952370: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==8008==    by 0x8BCFFD: clone (in /lib/tls/libc-2.3.4.so)
+==8008== 
+==8008== Conditional jump or move depends on uninitialised value(s)
+==8008==    at 0x8077F08: octstr_dump_real (octstr.c:2219)
+==8008==    by 0x8078596: octstr_dump_short (octstr.c:2282)
+==8008==    by 0x808A84A: smpp_pdu_dump (smpp_pdu.def:318)
+==8008==    by 0x805A506: io_thread (smsc_smpp.c:1320)
+==8008==    by 0x8067C2A: new_thread (gwthread-pthread.c:363)
+==8008==    by 0x952370: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==8008==    by 0x8BCFFD: clone (in /lib/tls/libc-2.3.4.so)
+==8008== 
+==8008== Conditional jump or move depends on uninitialised value(s)
+==8008==    at 0x8077F0D: octstr_dump_real (octstr.c:2219)
+==8008==    by 0x8078596: octstr_dump_short (octstr.c:2282)
+==8008==    by 0x808A84A: smpp_pdu_dump (smpp_pdu.def:318)
+==8008==    by 0x805A506: io_thread (smsc_smpp.c:1320)
+==8008==    by 0x8067C2A: new_thread (gwthread-pthread.c:363)
+==8008==    by 0x952370: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==8008==    by 0x8BCFFD: clone (in /lib/tls/libc-2.3.4.so)
+==8008== 
+==8008== Conditional jump or move depends on uninitialised value(s)
+==8008==    at 0x8077F16: octstr_dump_real (octstr.c:2219)
+==8008==    by 0x8078596: octstr_dump_short (octstr.c:2282)
+==8008==    by 0x808A84A: smpp_pdu_dump (smpp_pdu.def:318)
+==8008==    by 0x805A506: io_thread (smsc_smpp.c:1320)
+==8008==    by 0x8067C2A: new_thread (gwthread-pthread.c:363)
+==8008==    by 0x952370: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==8008==    by 0x8BCFFD: clone (in /lib/tls/libc-2.3.4.so)
+==8008== 
+==8008== ERROR SUMMARY: 80 errors from 8 contexts (suppressed: 31 from 2)
+==8008== malloc/free: in use at exit: 8,729 bytes in 117 blocks.
+==8008== malloc/free: 22,525 allocs, 22,408 frees, 2,317,865 bytes allocated.
+==8008== For counts of detected errors, rerun with: -v
+==8008== searching for pointers to 117 not-freed blocks.
+==8008== checked 33,706,292 bytes.
+==8008== 
+==8008== Thread 1:
+==8008== 
+==8008== 408 bytes in 3 blocks are possibly lost in loss record 2 of 5
+==8008==    at 0x40056BF: calloc (vg_replace_malloc.c:279)
+==8008==    by 0x7E571A: _dl_allocate_tls (in /lib/ld-2.3.4.so)
+==8008==    by 0x95291E: pthread_create@@GLIBC_2.1 (in /lib/tls/libpthread-2.3.4.so)
+==8008==    by 0x8067E2B: gwthread_create_real (gwthread-pthread.c:464)
+==8008==    by 0x8066DD0: fdset_create_real (fdset.c:383)
+==8008==    by 0x806A76E: http_open_port_if (http.c:2282)
+==8008==    by 0x8054BAD: client_httpadmin_start (client_httpadmin.c:458)
+==8008==    by 0x8052F9F: main (smpp_smsc.c:1081)
+==8008== 
+==8008== LEAK SUMMARY:
+==8008==    definitely lost: 0 bytes in 0 blocks.
+==8008==      possibly lost: 408 bytes in 3 blocks.
+==8008==    still reachable: 8,321 bytes in 114 blocks.
+==8008==         suppressed: 0 bytes in 0 blocks.
+==8008== Reachable blocks (those to which a pointer was found) are not shown.
+==8008== To see them, rerun with: --show-reachable=yes

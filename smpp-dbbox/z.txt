@@ -1,0 +1,94 @@
+==6574== Memcheck, a memory error detector
+==6574== Copyright (C) 2002-2009, and GNU GPL'd, by Julian Seward et al.
+==6574== Using Valgrind-3.5.0 and LibVEX; rerun with -h for copyright info
+==6574== Command: ./smpp_dbbox -v 0 smpp-dbbox.conf
+==6574== Parent PID: 1140
+==6574== 
+==6574== 
+==6574== HEAP SUMMARY:
+==6574==     in use at exit: 76,652 bytes in 90 blocks
+==6574==   total heap usage: 13,482 allocs, 13,392 frees, 920,804 bytes allocated
+==6574== 
+==6574== 78 (48 direct, 30 indirect) bytes in 3 blocks are definitely lost in loss record 59 of 72
+==6574==    at 0x4004A16: malloc (vg_replace_malloc.c:195)
+==6574==    by 0x805D0E4: gw_native_malloc (gwmem-native.c:86)
+==6574==    by 0x8069018: octstr_create_from_data_real (octstr.c:263)
+==6574==    by 0x8069125: octstr_create_real (octstr.c:251)
+==6574==    by 0x805169D: handle_request (smpp_dbbox.c:327)
+==6574==    by 0x80727D3: process_server_thread (process_sock.c:712)
+==6574==    by 0x805D9AE: new_thread (gwthread-pthread.c:363)
+==6574==    by 0x3683B0: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==6574==    by 0x2D2F7D: clone (in /lib/tls/libc-2.3.4.so)
+==6574== 
+==6574== 136 bytes in 1 blocks are possibly lost in loss record 63 of 72
+==6574==    at 0x4005EB7: calloc (vg_replace_malloc.c:418)
+==6574==    by 0x2007FA: _dl_allocate_tls (in /lib/ld-2.3.4.so)
+==6574==    by 0x368968: pthread_create@@GLIBC_2.1 (in /lib/tls/libpthread-2.3.4.so)
+==6574==    by 0x404D9AB: my_thread_global_init (in /usr/lib/libmysqlclient_r.so.16.0.0)
+==6574==    by 0x4048A02: my_init (in /usr/lib/libmysqlclient_r.so.16.0.0)
+==6574==    by 0x4042203: mysql_server_init (in /usr/lib/libmysqlclient_r.so.16.0.0)
+==6574==    by 0x4073F18: mysql_init (in /usr/lib/libmysqlclient_r.so.16.0.0)
+==6574==    by 0x805C176: mysql_open_conn (dbpool_mysql.c:84)
+==6574==    by 0x805C4E6: dbpool_increase (dbpool.c:188)
+==6574==    by 0x805C5F2: dbpool_create (dbpool.c:152)
+==6574==    by 0x805673F: dlr_init_mysql (dlr_mysql.c:938)
+==6574==    by 0x8053CE3: dlr_init (dlr.c:313)
+==6574== 
+==6574== 136 bytes in 1 blocks are possibly lost in loss record 64 of 72
+==6574==    at 0x4005EB7: calloc (vg_replace_malloc.c:418)
+==6574==    by 0x2007FA: _dl_allocate_tls (in /lib/ld-2.3.4.so)
+==6574==    by 0x368968: pthread_create@@GLIBC_2.1 (in /lib/tls/libpthread-2.3.4.so)
+==6574==    by 0x805DBAF: gwthread_create_real (gwthread-pthread.c:464)
+==6574==    by 0x806050B: http_open_port_if (http.c:2283)
+==6574==    by 0x8052B2D: dbbox_httpadmin_start (dbbox_httpadmin.c:415)
+==6574==    by 0x8050F58: main_thread (smpp_dbbox.c:141)
+==6574==    by 0x8051DB0: main (smpp_dbbox.c:888)
+==6574== 
+==6574== 136 bytes in 1 blocks are possibly lost in loss record 65 of 72
+==6574==    at 0x4005EB7: calloc (vg_replace_malloc.c:418)
+==6574==    by 0x2007FA: _dl_allocate_tls (in /lib/ld-2.3.4.so)
+==6574==    by 0x368968: pthread_create@@GLIBC_2.1 (in /lib/tls/libpthread-2.3.4.so)
+==6574==    by 0x805DBAF: gwthread_create_real (gwthread-pthread.c:464)
+==6574==    by 0x8052B41: dbbox_httpadmin_start (dbbox_httpadmin.c:417)
+==6574==    by 0x8050F58: main_thread (smpp_dbbox.c:141)
+==6574==    by 0x8051DB0: main (smpp_dbbox.c:888)
+==6574== 
+==6574== 32,704 bytes in 8 blocks are possibly lost in loss record 71 of 72
+==6574==    at 0x4004A16: malloc (vg_replace_malloc.c:195)
+==6574==    by 0x4050CFD: my_once_alloc (in /usr/lib/libmysqlclient_r.so.16.0.0)
+==6574==    by 0x4051177: ??? (in /usr/lib/libmysqlclient_r.so.16.0.0)
+==6574==    by 0x4051CF7: ??? (in /usr/lib/libmysqlclient_r.so.16.0.0)
+==6574==    by 0x405214B: get_charset_by_csname (in /usr/lib/libmysqlclient_r.so.16.0.0)
+==6574==    by 0x4074067: mysql_init_character_set (in /usr/lib/libmysqlclient_r.so.16.0.0)
+==6574==    by 0x40746D3: mysql_real_connect (in /usr/lib/libmysqlclient_r.so.16.0.0)
+==6574==    by 0x805C1F4: mysql_open_conn (dbpool_mysql.c:90)
+==6574==    by 0x805C4E6: dbpool_increase (dbpool.c:188)
+==6574==    by 0x805C5F2: dbpool_create (dbpool.c:152)
+==6574==    by 0x805673F: dlr_init_mysql (dlr_mysql.c:938)
+==6574==    by 0x8053CE3: dlr_init (dlr.c:313)
+==6574== 
+==6574== 32,704 bytes in 8 blocks are possibly lost in loss record 72 of 72
+==6574==    at 0x4004A16: malloc (vg_replace_malloc.c:195)
+==6574==    by 0x4050CFD: my_once_alloc (in /usr/lib/libmysqlclient_r.so.16.0.0)
+==6574==    by 0x40511A4: ??? (in /usr/lib/libmysqlclient_r.so.16.0.0)
+==6574==    by 0x4051CF7: ??? (in /usr/lib/libmysqlclient_r.so.16.0.0)
+==6574==    by 0x405214B: get_charset_by_csname (in /usr/lib/libmysqlclient_r.so.16.0.0)
+==6574==    by 0x4074067: mysql_init_character_set (in /usr/lib/libmysqlclient_r.so.16.0.0)
+==6574==    by 0x40746D3: mysql_real_connect (in /usr/lib/libmysqlclient_r.so.16.0.0)
+==6574==    by 0x805C1F4: mysql_open_conn (dbpool_mysql.c:90)
+==6574==    by 0x805C4E6: dbpool_increase (dbpool.c:188)
+==6574==    by 0x805C5F2: dbpool_create (dbpool.c:152)
+==6574==    by 0x805673F: dlr_init_mysql (dlr_mysql.c:938)
+==6574==    by 0x8053CE3: dlr_init (dlr.c:313)
+==6574== 
+==6574== LEAK SUMMARY:
+==6574==    definitely lost: 48 bytes in 3 blocks
+==6574==    indirectly lost: 30 bytes in 3 blocks
+==6574==      possibly lost: 65,816 bytes in 19 blocks
+==6574==    still reachable: 10,758 bytes in 65 blocks
+==6574==         suppressed: 0 bytes in 0 blocks
+==6574== Reachable blocks (those to which a pointer was found) are not shown.
+==6574== To see them, rerun with: --leak-check=full --show-reachable=yes
+==6574== 
+==6574== For counts of detected and suppressed errors, rerun with: -v
+==6574== ERROR SUMMARY: 6 errors from 6 contexts (suppressed: 32 from 10)

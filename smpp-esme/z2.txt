@@ -1,0 +1,165 @@
+==6612== Memcheck, a memory error detector
+==6612== Copyright (C) 2002-2009, and GNU GPL'd, by Julian Seward et al.
+==6612== Using Valgrind-3.5.0 and LibVEX; rerun with -h for copyright info
+==6612== Command: ./smpp_esme -v 0 smpp-esme.conf
+==6612== Parent PID: 1222
+==6612== 
+==6612== Thread 11:
+==6612== Conditional jump or move depends on uninitialised value(s)
+==6612==    at 0x2862BB: __mktime_internal (in /lib/tls/libc-2.3.4.so)
+==6612==    by 0x286975: mktime (in /lib/tls/libc-2.3.4.so)
+==6612==    by 0x8080C19: gw_mktime (protected.c:157)
+==6612==    by 0x8068D5E: to_seconds (date.c:356)
+==6612==    by 0x8068DB1: compare_date (date.c:375)
+==6612==    by 0x8059A4B: authorise_user (esme.c:738)
+==6612==    by 0x8052014: handle_bind_receiver (smpp_esme.c:371)
+==6612==    by 0x8053AA3: receive_smpp_thread (smpp_esme.c:1051)
+==6612==    by 0x806A79E: new_thread (gwthread-pthread.c:363)
+==6612==    by 0x3683B0: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==6612==    by 0x2D2F7D: clone (in /lib/tls/libc-2.3.4.so)
+==6612== 
+==6612== Thread 12:
+==6612== Conditional jump or move depends on uninitialised value(s)
+==6612==    at 0x807AAA6: octstr_dump_real (octstr.c:2220)
+==6612==    by 0x807B136: octstr_dump_short (octstr.c:2283)
+==6612==    by 0x808C83D: smpp_pdu_dump (smpp_pdu.def:206)
+==6612==    by 0x8053136: handle_pdu (smpp_esme.c:976)
+==6612==    by 0x8053732: receive_smpp_thread (smpp_esme.c:1324)
+==6612==    by 0x806A79E: new_thread (gwthread-pthread.c:363)
+==6612==    by 0x3683B0: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==6612==    by 0x2D2F7D: clone (in /lib/tls/libc-2.3.4.so)
+==6612== 
+==6612== Conditional jump or move depends on uninitialised value(s)
+==6612==    at 0x807AAA8: octstr_dump_real (octstr.c:2220)
+==6612==    by 0x807B136: octstr_dump_short (octstr.c:2283)
+==6612==    by 0x808C83D: smpp_pdu_dump (smpp_pdu.def:206)
+==6612==    by 0x8053136: handle_pdu (smpp_esme.c:976)
+==6612==    by 0x8053732: receive_smpp_thread (smpp_esme.c:1324)
+==6612==    by 0x806A79E: new_thread (gwthread-pthread.c:363)
+==6612==    by 0x3683B0: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==6612==    by 0x2D2F7D: clone (in /lib/tls/libc-2.3.4.so)
+==6612== 
+==6612== Conditional jump or move depends on uninitialised value(s)
+==6612==    at 0x807AAAD: octstr_dump_real (octstr.c:2220)
+==6612==    by 0x807B136: octstr_dump_short (octstr.c:2283)
+==6612==    by 0x808C83D: smpp_pdu_dump (smpp_pdu.def:206)
+==6612==    by 0x8053136: handle_pdu (smpp_esme.c:976)
+==6612==    by 0x8053732: receive_smpp_thread (smpp_esme.c:1324)
+==6612==    by 0x806A79E: new_thread (gwthread-pthread.c:363)
+==6612==    by 0x3683B0: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==6612==    by 0x2D2F7D: clone (in /lib/tls/libc-2.3.4.so)
+==6612== 
+==6612== Conditional jump or move depends on uninitialised value(s)
+==6612==    at 0x807AAB6: octstr_dump_real (octstr.c:2220)
+==6612==    by 0x807B136: octstr_dump_short (octstr.c:2283)
+==6612==    by 0x808C83D: smpp_pdu_dump (smpp_pdu.def:206)
+==6612==    by 0x8053136: handle_pdu (smpp_esme.c:976)
+==6612==    by 0x8053732: receive_smpp_thread (smpp_esme.c:1324)
+==6612==    by 0x806A79E: new_thread (gwthread-pthread.c:363)
+==6612==    by 0x3683B0: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==6612==    by 0x2D2F7D: clone (in /lib/tls/libc-2.3.4.so)
+==6612== 
+==6612== Thread 11:
+==6612== Conditional jump or move depends on uninitialised value(s)
+==6612==    at 0x807AAA6: octstr_dump_real (octstr.c:2220)
+==6612==    by 0x807B136: octstr_dump_short (octstr.c:2283)
+==6612==    by 0x808D676: smpp_pdu_dump (smpp_pdu.def:318)
+==6612==    by 0x805BF02: write_esme_conn (esme.c:1960)
+==6612==    by 0x80537F5: receive_smpp_thread (smpp_esme.c:1357)
+==6612==    by 0x806A79E: new_thread (gwthread-pthread.c:363)
+==6612==    by 0x3683B0: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==6612==    by 0x2D2F7D: clone (in /lib/tls/libc-2.3.4.so)
+==6612== 
+==6612== Conditional jump or move depends on uninitialised value(s)
+==6612==    at 0x807AAA8: octstr_dump_real (octstr.c:2220)
+==6612==    by 0x807B136: octstr_dump_short (octstr.c:2283)
+==6612==    by 0x808D676: smpp_pdu_dump (smpp_pdu.def:318)
+==6612==    by 0x805BF02: write_esme_conn (esme.c:1960)
+==6612==    by 0x80537F5: receive_smpp_thread (smpp_esme.c:1357)
+==6612==    by 0x806A79E: new_thread (gwthread-pthread.c:363)
+==6612==    by 0x3683B0: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==6612==    by 0x2D2F7D: clone (in /lib/tls/libc-2.3.4.so)
+==6612== 
+==6612== Conditional jump or move depends on uninitialised value(s)
+==6612==    at 0x807AAAD: octstr_dump_real (octstr.c:2220)
+==6612==    by 0x807B136: octstr_dump_short (octstr.c:2283)
+==6612==    by 0x808D676: smpp_pdu_dump (smpp_pdu.def:318)
+==6612==    by 0x805BF02: write_esme_conn (esme.c:1960)
+==6612==    by 0x80537F5: receive_smpp_thread (smpp_esme.c:1357)
+==6612==    by 0x806A79E: new_thread (gwthread-pthread.c:363)
+==6612==    by 0x3683B0: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==6612==    by 0x2D2F7D: clone (in /lib/tls/libc-2.3.4.so)
+==6612== 
+==6612== Conditional jump or move depends on uninitialised value(s)
+==6612==    at 0x807AAB6: octstr_dump_real (octstr.c:2220)
+==6612==    by 0x807B136: octstr_dump_short (octstr.c:2283)
+==6612==    by 0x808D676: smpp_pdu_dump (smpp_pdu.def:318)
+==6612==    by 0x805BF02: write_esme_conn (esme.c:1960)
+==6612==    by 0x80537F5: receive_smpp_thread (smpp_esme.c:1357)
+==6612==    by 0x806A79E: new_thread (gwthread-pthread.c:363)
+==6612==    by 0x3683B0: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==6612==    by 0x2D2F7D: clone (in /lib/tls/libc-2.3.4.so)
+==6612== 
+==6612== Thread 1:
+==6612== Invalid read of size 4
+==6612==    at 0x8058D6A: esme_shutdown (esme.c:366)
+==6612==    by 0x8054648: signal_handler (smpp_esme.c:1860)
+==6612==    by 0x36E957: ??? (in /lib/tls/libpthread-2.3.4.so)
+==6612==    by 0x806B383: gwthread_sleep (gwthread-pthread.c:771)
+==6612==    by 0x8055230: manage_thread (smpp_esme.c:2359)
+==6612==    by 0x8056296: main (smpp_esme.c:2661)
+==6612==  Address 0x430f094 is 84 bytes inside a block of size 92 free'd
+==6612==    at 0x4005625: free (vg_replace_malloc.c:325)
+==6612==    by 0x80589FF: esme_destroy (esme.c:256)
+==6612==    by 0x8053A53: receive_smpp_thread (smpp_esme.c:1363)
+==6612==    by 0x806A79E: new_thread (gwthread-pthread.c:363)
+==6612==    by 0x3683B0: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==6612==    by 0x2D2F7D: clone (in /lib/tls/libc-2.3.4.so)
+==6612== 
+==6612== 
+==6612== HEAP SUMMARY:
+==6612==     in use at exit: 18,858 bytes in 73 blocks
+==6612==   total heap usage: 14,182 allocs, 14,109 frees, 954,967 bytes allocated
+==6612== 
+==6612== 136 bytes in 1 blocks are possibly lost in loss record 56 of 62
+==6612==    at 0x4005EB7: calloc (vg_replace_malloc.c:418)
+==6612==    by 0x2007FA: _dl_allocate_tls (in /lib/ld-2.3.4.so)
+==6612==    by 0x368968: pthread_create@@GLIBC_2.1 (in /lib/tls/libpthread-2.3.4.so)
+==6612==    by 0x806A99F: gwthread_create_real (gwthread-pthread.c:464)
+==6612==    by 0x8069944: fdset_create_real (fdset.c:383)
+==6612==    by 0x806D2E2: http_open_port_if (http.c:2282)
+==6612==    by 0x805E98D: httpadmin_start (httpadmin.c:444)
+==6612==    by 0x8055098: manage_thread (smpp_esme.c:2207)
+==6612==    by 0x8056296: main (smpp_esme.c:2661)
+==6612== 
+==6612== 136 bytes in 1 blocks are possibly lost in loss record 57 of 62
+==6612==    at 0x4005EB7: calloc (vg_replace_malloc.c:418)
+==6612==    by 0x2007FA: _dl_allocate_tls (in /lib/ld-2.3.4.so)
+==6612==    by 0x368968: pthread_create@@GLIBC_2.1 (in /lib/tls/libpthread-2.3.4.so)
+==6612==    by 0x806A99F: gwthread_create_real (gwthread-pthread.c:464)
+==6612==    by 0x806D2FB: http_open_port_if (http.c:2283)
+==6612==    by 0x805E98D: httpadmin_start (httpadmin.c:444)
+==6612==    by 0x8055098: manage_thread (smpp_esme.c:2207)
+==6612==    by 0x8056296: main (smpp_esme.c:2661)
+==6612== 
+==6612== 136 bytes in 1 blocks are possibly lost in loss record 58 of 62
+==6612==    at 0x4005EB7: calloc (vg_replace_malloc.c:418)
+==6612==    by 0x2007FA: _dl_allocate_tls (in /lib/ld-2.3.4.so)
+==6612==    by 0x368968: pthread_create@@GLIBC_2.1 (in /lib/tls/libpthread-2.3.4.so)
+==6612==    by 0x806A99F: gwthread_create_real (gwthread-pthread.c:464)
+==6612==    by 0x805E9A1: httpadmin_start (httpadmin.c:446)
+==6612==    by 0x8055098: manage_thread (smpp_esme.c:2207)
+==6612==    by 0x8056296: main (smpp_esme.c:2661)
+==6612== 
+==6612== LEAK SUMMARY:
+==6612==    definitely lost: 0 bytes in 0 blocks
+==6612==    indirectly lost: 0 bytes in 0 blocks
+==6612==      possibly lost: 408 bytes in 3 blocks
+==6612==    still reachable: 18,450 bytes in 70 blocks
+==6612==         suppressed: 0 bytes in 0 blocks
+==6612== Reachable blocks (those to which a pointer was found) are not shown.
+==6612== To see them, rerun with: --leak-check=full --show-reachable=yes
+==6612== 
+==6612== For counts of detected and suppressed errors, rerun with: -v
+==6612== Use --track-origins=yes to see where uninitialised values come from
+==6612== ERROR SUMMARY: 16 errors from 13 contexts (suppressed: 31 from 10)

@@ -1,0 +1,232 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+CLIENT_CHECKLEAKS	smpp_smsc.c	/^    CLIENT_CHECKLEAKS = 2$/;"	e	file:
+CLIENT_LOGREOPEN	smpp_smsc.c	/^    CLIENT_LOGREOPEN = 1,$/;"	e	file:
+DEBUG	smsc_smpp.c	24;"	d	file:
+GET_OPTIONAL_VAL	smscconn.c	116;"	d	file:
+GET_OPTIONAL_VAL	smscconn.c	196;"	d	file:
+SMPP	smsc_smpp.c	/^} SMPP; $/;"	t	file:
+SMPP_DEFAULT_CONNECTION_TIMEOUT	smsc_smpp.c	48;"	d	file:
+SMPP_DEFAULT_PRIORITY	smsc_smpp.c	46;"	d	file:
+SMPP_DEFAULT_SHUTDOWN_TIMEOUT	smsc_smpp.c	50;"	d	file:
+SMPP_DEFAULT_VERSION	smsc_smpp.c	45;"	d	file:
+SMPP_DEFAULT_WAITACK	smsc_smpp.c	49;"	d	file:
+SMPP_ENQUIRE_LINK_INTERVAL	smsc_smpp.c	43;"	d	file:
+SMPP_MAX_PENDING_SUBMITS	smsc_smpp.c	44;"	d	file:
+SMPP_THROTTLING_SLEEP_TIME	smsc_smpp.c	47;"	d	file:
+SMPP_WAITACK_NEVER_EXPIRE	smsc_smpp.c	58;"	d	file:
+SMPP_WAITACK_RECONNECT	smsc_smpp.c	56;"	d	file:
+SMPP_WAITACK_REQUEUE	smsc_smpp.c	57;"	d	file:
+SMSCCONN_RECONNECT_DELAY	smscconn.c	26;"	d	file:
+SPLIT_OPTIONAL_VAL	smscconn.c	117;"	d	file:
+SPLIT_OPTIONAL_VAL	smscconn.c	197;"	d	file:
+access_file_name	smpp_smsc.c	/^Octstr *access_file_name = NULL;$/;"	v
+address_range	smsc_smpp.c	/^    Octstr *address_range; $/;"	m	file:
+alt_addr_charset	smsc_smpp.c	/^    Octstr *alt_addr_charset;$/;"	m	file:
+alt_charset	smsc_smpp.c	/^    Octstr *alt_charset;$/;"	m	file:
+append_status	smpp_smsc.c	1289;"	d	file:
+autodetect_addr	smsc_smpp.c	/^    int autodetect_addr;$/;"	m	file:
+bind_addr_npi	smsc_smpp.c	/^    long bind_addr_npi;$/;"	m	file:
+bind_addr_ton	smsc_smpp.c	/^    long bind_addr_ton;$/;"	m	file:
+change_smsc_logfile	smsc.c	/^void change_smsc_logfile(void)$/;"	f
+change_smsc_logfile_onsize	smsc.c	/^void change_smsc_logfile_onsize(long iLogSize)$/;"	f
+check_args	smpp_smsc.c	/^static int check_args(int i, int argc, char **argv) $/;"	f	file:
+check_config	smpp_smsc.c	/^static int check_config(Cfg *cfg)$/;"	f	file:
+client_get_status_name	client_httpadmin.c	/^char* client_get_status_name(sig_atomic_t program_status)$/;"	f
+client_httpadmin_start	client_httpadmin.c	/^int client_httpadmin_start(Cfg *cfg)$/;"	f
+client_httpadmin_stop	client_httpadmin.c	/^void client_httpadmin_stop(void)$/;"	f
+command	client_httpadmin.c	/^    const char *command;$/;"	m	struct:httpd_command	file:
+compare_change_string	smsc.c	/^int compare_change_string(Octstr *smsc_id)$/;"	f
+compare_smsc_string	smsc.c	/^static List *compare_smsc_string = NULL;$/;"	v	file:
+conn	smsc_smpp.c	/^    SMSCConn *conn; $/;"	m	file:
+connection_timeout	smsc_smpp.c	/^    long connection_timeout;$/;"	m	file:
+dbbox_client	smpp_smsc.c	/^PROCESS_CLIENT* dbbox_client;\/*client to dbbox*\/$/;"	v
+dbbox_q_limit	smpp_smsc.c	/^long dbbox_q_limit = -1;\/*max no of msgs if dbbox is not connected*\/$/;"	v
+deliver_sm_source	smsc_smpp.c	/^	int deliver_sm_source;$/;"	m	file:
+dest_addr_npi	smsc_smpp.c	/^    int dest_addr_npi;$/;"	m	file:
+dest_addr_ton	smsc_smpp.c	/^    int dest_addr_ton; $/;"	m	file:
+do_queue_cleanup	smsc_smpp.c	/^static int do_queue_cleanup(SMPP *smpp, long *pending_submits, int action)$/;"	f	file:
+dump_pdu	smsc_smpp.c	27;"	d	file:
+dump_pdu	smsc_smpp.c	30;"	d	file:
+empty_msg_lists	smpp_smsc.c	/^static void empty_msg_lists(void)$/;"	f	file:
+enquire_link_interval	smsc_smpp.c	/^    long enquire_link_interval;$/;"	m	file:
+filename	smpp_smsc.c	/^static Octstr *filename;$/;"	v	file:
+flow_threads	smpp_smsc.c	/^List *flow_threads;$/;"	v
+forward_server	smpp_smsc.c	/^SERVER_DATA *forward_server;\/*forward server related data*\/$/;"	v
+function	client_httpadmin.c	/^    Octstr * (*function)(List *cgivars, int status_type);$/;"	m	struct:httpd_command	file:
+get_smscid	smsc_smpp.c	/^static void get_smscid(Octstr *sm,Octstr **smscmsgid1,int *stat)$/;"	f	file:
+giLogSize	smpp_smsc.c	/^long giLogSize;$/;"	v
+giManagelogInterval	smpp_smsc.c	/^int giManagelogInterval;$/;"	v
+global_q_max	smsc.c	/^long global_q_max = -1;$/;"	v
+global_q_min	smsc.c	/^long global_q_min = -1;$/;"	v
+ha_allow_ip	client_httpadmin.c	/^static Octstr *ha_allow_ip;$/;"	v	file:
+ha_deny_ip	client_httpadmin.c	/^static Octstr *ha_deny_ip;$/;"	v	file:
+ha_interface	client_httpadmin.c	/^static Octstr *ha_interface;$/;"	v	file:
+ha_password	client_httpadmin.c	/^static Octstr *ha_password;$/;"	v	file:
+ha_port	client_httpadmin.c	/^static long	ha_port;$/;"	v	file:
+ha_status_pw	client_httpadmin.c	/^static Octstr *ha_status_pw;$/;"	v	file:
+handle_deliver_sm_msgid	smsc_smpp.c	/^static void handle_deliver_sm_msgid(SMPP *smpp,Octstr **msgid)$/;"	f	file:
+handle_pdu	smsc_smpp.c	/^static void handle_pdu(SMPP *smpp, Connection *conn, SMPP_PDU *pdu,$/;"	f	file:
+handle_request	smpp_smsc.c	/^void handle_request(Conn_Msg *msg,PROCESS_CLIENT *process_client)$/;"	f
+host	smsc_smpp.c	/^    Octstr *host; $/;"	m	file:
+httpadmin_run	client_httpadmin.c	/^static void httpadmin_run(void *arg)$/;"	f	file:
+httpadmin_running	client_httpadmin.c	/^static volatile sig_atomic_t httpadmin_running;$/;"	v	file:
+httpd_check_authorization	client_httpadmin.c	/^static Octstr *httpd_check_authorization(List *cgivars, int status)$/;"	f	file:
+httpd_check_status	client_httpadmin.c	/^static Octstr *httpd_check_status(void)$/;"	f	file:
+httpd_client_shutdown	client_httpadmin.c	/^static Octstr *httpd_client_shutdown(List *cgivars, int status_type)$/;"	f	file:
+httpd_client_status	client_httpadmin.c	/^Octstr *httpd_client_status(List *cgivars, int status_type)$/;"	f
+httpd_client_version	client_httpadmin.c	/^static Octstr *httpd_client_version(List *cgivars, int status_type)$/;"	f	file:
+httpd_command	client_httpadmin.c	/^static struct httpd_command {$/;"	s	file:
+httpd_commands	client_httpadmin.c	/^} httpd_commands[] = {$/;"	v	file:
+httpd_serve	client_httpadmin.c	/^static void httpd_serve(HTTPClient *client, Octstr *ourl, List *headers,$/;"	f	file:
+httpd_smsc_restart	client_httpadmin.c	/^static Octstr *httpd_smsc_restart(List *cgivars, int status_type)$/;"	f	file:
+httpd_smsc_status	client_httpadmin.c	/^Octstr *httpd_smsc_status(List *cgivars, int status_type)$/;"	f
+httpd_smsc_stop	client_httpadmin.c	/^static Octstr *httpd_smsc_stop(List *cgivars, int status_type)$/;"	f	file:
+incoming_msg_counter	smpp_smsc.c	/^Counter *incoming_msg_counter;$/;"	v
+info_destroy	msg.c	/^void info_destroy(struct info * q)$/;"	f
+init_smpp_client	smpp_smsc.c	/^static Cfg *init_smpp_client(Cfg *cfg)$/;"	f	file:
+initiate_smsc	smpp_smsc.c	/^static int initiate_smsc (Cfg *cfg)$/;"	f	file:
+io_arg	smsc_smpp.c	/^struct io_arg {$/;"	s	file:
+io_arg_create	smsc_smpp.c	/^static struct io_arg *io_arg_create(SMPP *smpp, int transmitter)$/;"	f	file:
+io_thread	smsc_smpp.c	/^static void io_thread(void *arg)$/;"	f	file:
+lc	msg.c	/^char *lc(char *str)$/;"	f
+log_file_idx	smsc.c	/^static long log_file_idx = -1;$/;"	v	file:
+log_file_index	smpp_smsc.c	/^long log_file_index;\/*log index of the log file*\/$/;"	v
+log_file_thread_id	smpp_smsc.c	/^long log_file_thread_id;\/*thread to handle log file names*\/$/;"	v
+logfile	smpp_smsc.c	/^static Octstr *logfile;$/;"	v	file:
+main	smpp_smsc.c	/^int main(int argc, char **argv)$/;"	f
+manage_log_thread	smpp_smsc.c	/^static void manage_log_thread(void *arg)$/;"	f	file:
+masking_prefix	smsc_smpp.c	/^    Octstr *masking_prefix;$/;"	m	file:
+max_msg_duration	smsc.c	/^static long max_msg_duration = -1;$/;"	v	file:
+max_pending_submits	smsc_smpp.c	/^    long max_pending_submits;$/;"	m	file:
+max_retry_limit	smsc.c	/^static long max_retry_limit = 1;$/;"	v	file:
+message_id_counter	smsc_smpp.c	/^    Counter *message_id_counter; $/;"	m	file:
+mis_db_insert	smpp_smsc.c	/^int mis_db_insert(  Octstr *account_name,$/;"	f
+msg	smsc_smpp.c	/^    Msg *msg;$/;"	m	struct:smpp_msg	file:
+msg_create	msg.c	/^Msg *msg_create()$/;"	f
+msg_destroy	msg.c	/^void msg_destroy(void  *message)$/;"	f
+msg_duplicate	msg.c	/^Msg* msg_duplicate(Msg * msg)$/;"	f
+msg_resend_frequency	smsc.c	/^static long msg_resend_frequency;$/;"	v	file:
+msg_router	smsc.c	/^static void msg_router(void *arg)$/;"	f	file:
+msgs_to_send	smsc_smpp.c	/^    List *msgs_to_send;$/;"	m	file:
+open_receiver	smsc_smpp.c	/^static Connection *open_receiver(SMPP *smpp)$/;"	f	file:
+open_transceiver	smsc_smpp.c	/^static Connection *open_transceiver(SMPP *smpp) $/;"	f	file:
+open_transmitter	smsc_smpp.c	/^static Connection *open_transmitter(SMPP *smpp)$/;"	f	file:
+outgoing_msg	smpp_smsc.c	/^List *outgoing_msg;$/;"	v
+outgoing_msg_counter	smpp_smsc.c	/^Counter *outgoing_msg_counter;$/;"	v
+password	smsc_smpp.c	/^    Octstr *password; $/;"	m	file:
+print_client_status	smpp_smsc.c	/^Octstr *print_client_status(int status_type)$/;"	f
+priority	smsc_smpp.c	/^    int priority;       \/* set default priority for messages *\/    $/;"	m	file:
+process_program_status	smpp_smsc.c	/^volatile enum process_program_status process_program_status = starting_up;$/;"	v
+produce_outgoing_msg	smsc.c	/^void produce_outgoing_msg(Msg *sms)$/;"	f
+queue_recv_thread	smpp_smsc.c	/^static void queue_recv_thread(void *arg)$/;"	f	file:
+queue_thread	smpp_smsc.c	/^long queue_thread;$/;"	v
+queued_cb	smsc_smpp.c	/^static long queued_cb(SMSCConn *conn)$/;"	f	file:
+quitting	smsc_smpp.c	/^    int quitting; $/;"	m	file:
+read_pdu	smsc_smpp.c	/^static int read_pdu(SMPP *smpp, Connection *conn, long *len, SMPP_PDU **pdu) $/;"	f	file:
+receive_port	smsc_smpp.c	/^    int receive_port; $/;"	m	file:
+received_msgs	smsc_smpp.c	/^    List *received_msgs; $/;"	m	file:
+receiver	smsc_smpp.c	/^    long receiver;$/;"	m	file:
+report_smpp_client_versions	smpp_server_version.c	/^void report_smpp_client_versions(const char *boxname)$/;"	f
+reset_smpp_counters	smscconn.c	/^void reset_smpp_counters(SMSCConn *conn)$/;"	f
+restart	smpp_smsc.c	/^volatile sig_atomic_t restart = 0; $/;"	v
+reverse_server	smpp_smsc.c	/^SERVER_DATA *reverse_server;\/*reverse server related data*\/$/;"	v
+router_thread	smsc.c	/^static long router_thread = -1;$/;"	v	file:
+send_enquire_link	smsc_smpp.c	/^static void send_enquire_link(SMPP *smpp, Connection *conn, long *last_sent)$/;"	f	file:
+send_messages	smsc_smpp.c	/^static void send_messages(SMPP *smpp, Connection *conn, long *pending_submits)$/;"	f	file:
+send_msg_cb	smsc_smpp.c	/^static int send_msg_cb(SMSCConn *conn, Msg *msg1)$/;"	f	file:
+send_msg_dbbox_server	smpp_smsc.c	/^int send_msg_dbbox_server(Conn_Msg *msg,int mode)$/;"	f
+send_msg_reverse_server	smpp_smsc.c	/^int send_msg_reverse_server(Conn_Msg *msg)$/;"	f
+send_pdu	smsc_smpp.c	/^static int send_pdu(Connection *conn, Octstr *id, SMPP_PDU *pdu)$/;"	f	file:
+send_system_info	smsc.c	/^static void send_system_info(void *arg)$/;"	f	file:
+send_system_info_init	smsc.c	/^void send_system_info_init(void)$/;"	f
+send_terminate_info_server	smsc.c	/^void send_terminate_info_server(void)$/;"	f
+send_unbind	smsc_smpp.c	/^static void send_unbind(SMPP *smpp, Connection *conn)$/;"	f	file:
+sent_msgs	smsc_smpp.c	/^    Dict *sent_msgs; $/;"	m	file:
+sent_time	smsc_smpp.c	/^    time_t sent_time;$/;"	m	struct:smpp_msg	file:
+service_type	smsc_smpp.c	/^    Octstr *service_type;$/;"	m	file:
+set_shutdown_status	smpp_smsc.c	/^static void set_shutdown_status(void)$/;"	f	file:
+setup_signal_handlers	smpp_smsc.c	/^static void setup_signal_handlers(void)$/;"	f	file:
+shutdown_cb	smsc_smpp.c	/^static int shutdown_cb(SMSCConn *conn, int finish_sending)$/;"	f	file:
+signal_handler	smpp_smsc.c	/^static void signal_handler(int signum)$/;"	f	file:
+smpp	smsc_smpp.c	/^    SMPP *smpp;$/;"	m	struct:io_arg	file:
+smpp_client_print_status	smpp_smsc.c	/^Octstr *smpp_client_print_status(int status_type)$/;"	f
+smpp_client_restart	smpp_smsc.c	/^static int smpp_client_restart(void)$/;"	f	file:
+smpp_client_restart_smsc	smpp_smsc.c	/^static int smpp_client_restart_smsc(Octstr *id)$/;"	f	file:
+smpp_client_resume	smpp_smsc.c	/^static int smpp_client_resume(void)$/;"	f	file:
+smpp_client_shutdown	smpp_smsc.c	/^int smpp_client_shutdown(void)$/;"	f
+smpp_client_smscconn_connected	smsc.c	/^void smpp_client_smscconn_connected(SMSCConn *conn)$/;"	f
+smpp_client_smscconn_killed	smsc.c	/^void smpp_client_smscconn_killed(void)$/;"	f
+smpp_client_smscconn_ready	smsc.c	/^void smpp_client_smscconn_ready(SMSCConn *conn)$/;"	f
+smpp_client_status	smpp_smsc.c	/^volatile sig_atomic_t smpp_client_status;$/;"	v
+smpp_client_status_linebreak	smpp_smsc.c	/^char *smpp_client_status_linebreak(int status_type)$/;"	f
+smpp_client_stop_smsc	smpp_smsc.c	/^static int smpp_client_stop_smsc(Octstr *id)$/;"	f	file:
+smpp_client_suspend	smpp_smsc.c	/^static int smpp_client_suspend(void)$/;"	f	file:
+smpp_client_todo	smpp_smsc.c	/^static volatile sig_atomic_t smpp_client_todo = 0;$/;"	v	file:
+smpp_create	smsc_smpp.c	/^static SMPP *smpp_create(SMSCConn *conn, Octstr *host, int transmit_port,  $/;"	f	file:
+smpp_destroy	smsc_smpp.c	/^static void smpp_destroy(SMPP *smpp) $/;"	f	file:
+smpp_msg	smsc_smpp.c	/^struct smpp_msg $/;"	s	file:
+smpp_msg_create	smsc_smpp.c	/^static struct smpp_msg* smpp_msg_create(Msg *msg)$/;"	f	file:
+smpp_msg_destroy	smsc_smpp.c	/^static void smpp_msg_destroy(struct smpp_msg *msg, int destroy_msg)$/;"	f	file:
+smpp_msg_id_type	smsc_smpp.c	/^    int smpp_msg_id_type;  \/* msg id in C string, hex or decimal *\/$/;"	m	file:
+smpp_status_to_smscconn_failure_reason	smsc_smpp.c	/^static long smpp_status_to_smscconn_failure_reason(long status)$/;"	f	file:
+smsc2_cleanup	smsc.c	/^void smsc2_cleanup(void)$/;"	f
+smsc2_find	smsc.c	/^static long smsc2_find(Octstr *id, long start)$/;"	f	file:
+smsc2_restart_smsc	smsc.c	/^int smsc2_restart_smsc(Octstr *id)$/;"	f
+smsc2_resume	smsc.c	/^void smsc2_resume(void)$/;"	f
+smsc2_rout	smsc.c	/^int smsc2_rout(Msg *message)$/;"	f
+smsc2_shutdown	smsc.c	/^int smsc2_shutdown(void)$/;"	f
+smsc2_status	smsc.c	/^Octstr *smsc2_status(int status_type)$/;"	f
+smsc2_stop_smsc	smsc.c	/^int smsc2_stop_smsc(Octstr *id)$/;"	f
+smsc2_suspend	smsc.c	/^void smsc2_suspend(void)$/;"	f
+smsc_groups	smsc.c	/^static List *smsc_groups;$/;"	v	file:
+smsc_length	smsc.c	/^int smsc_length(void)$/;"	f
+smsc_list	smsc.c	/^static List *smsc_list;$/;"	v	file:
+smsc_list_lock	smsc.c	/^static RWLock smsc_list_lock;$/;"	v	file:
+smsc_running	smsc.c	/^static volatile sig_atomic_t smsc_running;$/;"	v	file:
+smsc_smpp_create	smsc_smpp.c	/^int smsc_smpp_create(SMSCConn *conn, CfgGroup *grp)$/;"	f
+smscconn_change_logfile	smscconn.c	/^void smscconn_change_logfile(SMSCConn *conn)$/;"	f
+smscconn_change_logfile_onsize	smscconn.c	/^void smscconn_change_logfile_onsize(SMSCConn *conn, long iLogSize)$/;"	f
+smscconn_create	smscconn.c	/^SMSCConn *smscconn_create(CfgGroup *grp, int start_as_stopped)$/;"	f
+smscconn_destroy	smscconn.c	/^int smscconn_destroy(SMSCConn *conn)$/;"	f
+smscconn_failure_reason_to_smpp_status	smsc_smpp.c	/^static long smscconn_failure_reason_to_smpp_status(long reason)$/;"	f	file:
+smscconn_id	smscconn.c	/^const Octstr *smscconn_id(SMSCConn *conn)$/;"	f
+smscconn_info	smscconn.c	/^int smscconn_info(SMSCConn *conn, StatusInfo *infotable)$/;"	f
+smscconn_name	smscconn.c	/^const Octstr *smscconn_name(SMSCConn *conn)$/;"	f
+smscconn_send	smscconn.c	/^int smscconn_send(SMSCConn *conn, Msg *msg)$/;"	f
+smscconn_send_failed	smscconn.c	/^void smscconn_send_failed(SMSCConn *conn, Msg *sms, int reason,SMPP_PDU *pdu)$/;"	f
+smscconn_sent	smscconn.c	/^void smscconn_sent(SMSCConn *conn, Msg *sms,Octstr *smsc_msg_id,SMPP_PDU *pdu)$/;"	f
+smscconn_shutdown	smscconn.c	/^void smscconn_shutdown(SMSCConn *conn, int finish_sending)$/;"	f
+smscconn_start	smscconn.c	/^void smscconn_start(SMSCConn *conn)$/;"	f
+smscconn_status	smscconn.c	/^int smscconn_status(SMSCConn *conn)$/;"	f
+smscconn_stop	smscconn.c	/^int smscconn_stop(SMSCConn *conn)$/;"	f
+smscconn_usable	smscconn.c	/^int smscconn_usable(SMSCConn *conn,struct forward_queue_data *msg)$/;"	f
+source_addr_npi	smsc_smpp.c	/^    int source_addr_npi; $/;"	m	file:
+source_addr_ton	smsc_smpp.c	/^	int source_addr_ton; $/;"	m	file:
+start2_smsc	smsc.c	/^int start2_smsc(Cfg *cfg)$/;"	f
+start_smsc	smpp_smsc.c	/^static int start_smsc(Cfg *cfg)$/;"	f	file:
+start_time	smpp_smsc.c	/^static time_t start_time; $/;"	v	file:
+status_mutex	smpp_smsc.c	/^static Mutex *status_mutex; $/;"	v	file:
+suspended	smpp_smsc.c	/^List *suspended;$/;"	v
+sys_thread	smsc.c	/^long sys_thread = -1;$/;"	v
+system_info_resend_frequency	smsc.c	/^static long system_info_resend_frequency;$/;"	v	file:
+system_shutdown	smpp_smsc.c	/^void system_shutdown(void)$/;"	f
+system_type	smsc_smpp.c	/^    Octstr *system_type; $/;"	m	file:
+throttling_err_time	smsc_smpp.c	/^    time_t throttling_err_time;$/;"	m	file:
+transmit_port	smsc_smpp.c	/^    int transmit_port; $/;"	m	file:
+transmitter	smsc_smpp.c	/^    int transmitter;$/;"	m	struct:io_arg	file:
+transmitter	smsc_smpp.c	/^    long transmitter;$/;"	m	file:
+uc	msg.c	/^char *uc(char *str)$/;"	f
+username	smsc_smpp.c	/^    Octstr *username; $/;"	m	file:
+validityperiod	smsc_smpp.c	/^    int validityperiod;    $/;"	m	file:
+version	smsc_smpp.c	/^    int version;$/;"	m	file:
+version_smpp_client_report_string	smpp_server_version.c	/^Octstr *version_smpp_client_report_string(const char *boxname)$/;"	f
+wait_ack	smsc_smpp.c	/^    long wait_ack;$/;"	m	file:
+wait_ack_action	smsc_smpp.c	/^    int wait_ack_action;$/;"	m	file:
+waiting_cb	smsc_smpp.c	/^static int waiting_cb(SMSCConn *conn)$/;"	f	file:
+wake_router_thread	smsc.c	/^void wake_router_thread(void)$/;"	f
+wake_sys_thread	smsc.c	/^void wake_sys_thread(void)$/;"	f

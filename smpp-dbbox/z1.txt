@@ -1,0 +1,268 @@
+==18982== Memcheck, a memory error detector.
+==18982== Copyright (C) 2002-2007, and GNU GPL'd, by Julian Seward et al.
+==18982== Using LibVEX rev 1804, a library for dynamic binary translation.
+==18982== Copyright (C) 2004-2007, and GNU GPL'd, by OpenWorks LLP.
+==18982== Using valgrind-3.3.0, a dynamic binary instrumentation framework.
+==18982== Copyright (C) 2000-2007, and GNU GPL'd, by Julian Seward et al.
+==18982== For more details, rerun with: -v
+==18982== 
+==18982== My PID = 18982, parent PID = 14390.  Prog and args are:
+==18982==    ./smpp_dbbox
+==18982==    -v
+==18982==    0
+==18982==    smpp-dbbox.conf
+==18982== 
+==18982== Thread 2:
+==18982== Conditional jump or move depends on uninitialised value(s)
+==18982==    at 0x805D95F: gwthread_poll (gwthread-pthread.c:744)
+==18982==    by 0x8087818: poller (fdset.c:331)
+==18982==    by 0x805CE4A: new_thread (gwthread-pthread.c:363)
+==18982==    by 0xBB2370: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0xA19FFD: clone (in /lib/tls/libc-2.3.4.so)
+==18982== 
+==18982== Thread 7:
+==18982== Invalid read of size 4
+==18982==    at 0x8071AEC: process_server_thread (process_sock.c:711)
+==18982==    by 0x805CE4A: new_thread (gwthread-pthread.c:363)
+==18982==    by 0xBB2370: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0xA19FFD: clone (in /lib/tls/libc-2.3.4.so)
+==18982==  Address 0x431a220 is 0 bytes inside a block of size 8 free'd
+==18982==    at 0x4005475: free (vg_replace_malloc.c:323)
+==18982==    by 0x8071F16: listening_thread (process_sock.c:771)
+==18982==    by 0x805CE4A: new_thread (gwthread-pthread.c:363)
+==18982==    by 0xBB2370: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0xA19FFD: clone (in /lib/tls/libc-2.3.4.so)
+==18982== 
+==18982== Invalid read of size 4
+==18982==    at 0x8071AEE: process_server_thread (process_sock.c:711)
+==18982==    by 0x805CE4A: new_thread (gwthread-pthread.c:363)
+==18982==    by 0xBB2370: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0xA19FFD: clone (in /lib/tls/libc-2.3.4.so)
+==18982==  Address 0x431957c is 4 bytes inside a block of size 28 free'd
+==18982==    at 0x4005475: free (vg_replace_malloc.c:323)
+==18982==    by 0x8071F08: listening_thread (process_sock.c:833)
+==18982==    by 0x805CE4A: new_thread (gwthread-pthread.c:363)
+==18982==    by 0xBB2370: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0xA19FFD: clone (in /lib/tls/libc-2.3.4.so)
+==18982== 
+==18982== Invalid read of size 4
+==18982==    at 0xBB44DF: pthread_rwlock_wrlock (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0x8071AF5: process_server_thread (process_sock.c:711)
+==18982==    by 0x805CE4A: new_thread (gwthread-pthread.c:363)
+==18982==    by 0xBB2370: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0xA19FFD: clone (in /lib/tls/libc-2.3.4.so)
+==18982==  Address 0x43196e8 is 0 bytes inside a block of size 36 free'd
+==18982==    at 0x4005475: free (vg_replace_malloc.c:323)
+==18982==    by 0x8071F00: listening_thread (process_sock.c:832)
+==18982==    by 0x805CE4A: new_thread (gwthread-pthread.c:363)
+==18982==    by 0xBB2370: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0xA19FFD: clone (in /lib/tls/libc-2.3.4.so)
+==18982== 
+==18982== Invalid read of size 4
+==18982==    at 0xBB44E5: pthread_rwlock_wrlock (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0x8071AF5: process_server_thread (process_sock.c:711)
+==18982==    by 0x805CE4A: new_thread (gwthread-pthread.c:363)
+==18982==    by 0xBB2370: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0xA19FFD: clone (in /lib/tls/libc-2.3.4.so)
+==18982==  Address 0x4319704 is 28 bytes inside a block of size 36 free'd
+==18982==    at 0x4005475: free (vg_replace_malloc.c:323)
+==18982==    by 0x8071F00: listening_thread (process_sock.c:832)
+==18982==    by 0x805CE4A: new_thread (gwthread-pthread.c:363)
+==18982==    by 0xBB2370: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0xA19FFD: clone (in /lib/tls/libc-2.3.4.so)
+==18982== 
+==18982== Invalid read of size 4
+==18982==    at 0xBB44EC: pthread_rwlock_wrlock (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0x8071AF5: process_server_thread (process_sock.c:711)
+==18982==    by 0x805CE4A: new_thread (gwthread-pthread.c:363)
+==18982==    by 0xBB2370: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0xA19FFD: clone (in /lib/tls/libc-2.3.4.so)
+==18982==  Address 0x43196ec is 4 bytes inside a block of size 36 free'd
+==18982==    at 0x4005475: free (vg_replace_malloc.c:323)
+==18982==    by 0x8071F00: listening_thread (process_sock.c:832)
+==18982==    by 0x805CE4A: new_thread (gwthread-pthread.c:363)
+==18982==    by 0xBB2370: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0xA19FFD: clone (in /lib/tls/libc-2.3.4.so)
+==18982== 
+==18982== Invalid write of size 4
+==18982==    at 0xBB4530: pthread_rwlock_wrlock (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0x8071AF5: process_server_thread (process_sock.c:711)
+==18982==    by 0x805CE4A: new_thread (gwthread-pthread.c:363)
+==18982==    by 0xBB2370: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0xA19FFD: clone (in /lib/tls/libc-2.3.4.so)
+==18982==  Address 0x4319704 is 28 bytes inside a block of size 36 free'd
+==18982==    at 0x4005475: free (vg_replace_malloc.c:323)
+==18982==    by 0x8071F00: listening_thread (process_sock.c:832)
+==18982==    by 0x805CE4A: new_thread (gwthread-pthread.c:363)
+==18982==    by 0xBB2370: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0xA19FFD: clone (in /lib/tls/libc-2.3.4.so)
+==18982== 
+==18982== Invalid read of size 4
+==18982==    at 0xBB4533: pthread_rwlock_wrlock (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0x8071AF5: process_server_thread (process_sock.c:711)
+==18982==    by 0x805CE4A: new_thread (gwthread-pthread.c:363)
+==18982==    by 0xBB2370: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0xA19FFD: clone (in /lib/tls/libc-2.3.4.so)
+==18982==  Address 0x43196e8 is 0 bytes inside a block of size 36 free'd
+==18982==    at 0x4005475: free (vg_replace_malloc.c:323)
+==18982==    by 0x8071F00: listening_thread (process_sock.c:832)
+==18982==    by 0x805CE4A: new_thread (gwthread-pthread.c:363)
+==18982==    by 0xBB2370: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0xA19FFD: clone (in /lib/tls/libc-2.3.4.so)
+==18982== 
+==18982== Invalid read of size 4
+==18982==    at 0x8071AFE: process_server_thread (process_sock.c:712)
+==18982==    by 0x805CE4A: new_thread (gwthread-pthread.c:363)
+==18982==    by 0xBB2370: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0xA19FFD: clone (in /lib/tls/libc-2.3.4.so)
+==18982==  Address 0x431a220 is 0 bytes inside a block of size 8 free'd
+==18982==    at 0x4005475: free (vg_replace_malloc.c:323)
+==18982==    by 0x8071F16: listening_thread (process_sock.c:771)
+==18982==    by 0x805CE4A: new_thread (gwthread-pthread.c:363)
+==18982==    by 0xBB2370: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0xA19FFD: clone (in /lib/tls/libc-2.3.4.so)
+==18982== 
+==18982== Invalid read of size 4
+==18982==    at 0x8071B00: process_server_thread (process_sock.c:712)
+==18982==    by 0x805CE4A: new_thread (gwthread-pthread.c:363)
+==18982==    by 0xBB2370: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0xA19FFD: clone (in /lib/tls/libc-2.3.4.so)
+==18982==  Address 0x4319578 is 0 bytes inside a block of size 28 free'd
+==18982==    at 0x4005475: free (vg_replace_malloc.c:323)
+==18982==    by 0x8071F08: listening_thread (process_sock.c:833)
+==18982==    by 0x805CE4A: new_thread (gwthread-pthread.c:363)
+==18982==    by 0xBB2370: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0xA19FFD: clone (in /lib/tls/libc-2.3.4.so)
+==18982== 
+==18982== Invalid read of size 4
+==18982==    at 0x8071B43: process_server_thread (process_sock.c:722)
+==18982==    by 0x805CE4A: new_thread (gwthread-pthread.c:363)
+==18982==    by 0xBB2370: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0xA19FFD: clone (in /lib/tls/libc-2.3.4.so)
+==18982==  Address 0x431a220 is 0 bytes inside a block of size 8 free'd
+==18982==    at 0x4005475: free (vg_replace_malloc.c:323)
+==18982==    by 0x8071F16: listening_thread (process_sock.c:771)
+==18982==    by 0x805CE4A: new_thread (gwthread-pthread.c:363)
+==18982==    by 0xBB2370: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0xA19FFD: clone (in /lib/tls/libc-2.3.4.so)
+==18982== 
+==18982== Invalid read of size 4
+==18982==    at 0x8071B45: process_server_thread (process_sock.c:722)
+==18982==    by 0x805CE4A: new_thread (gwthread-pthread.c:363)
+==18982==    by 0xBB2370: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0xA19FFD: clone (in /lib/tls/libc-2.3.4.so)
+==18982==  Address 0x431957c is 4 bytes inside a block of size 28 free'd
+==18982==    at 0x4005475: free (vg_replace_malloc.c:323)
+==18982==    by 0x8071F08: listening_thread (process_sock.c:833)
+==18982==    by 0x805CE4A: new_thread (gwthread-pthread.c:363)
+==18982==    by 0xBB2370: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0xA19FFD: clone (in /lib/tls/libc-2.3.4.so)
+==18982== 
+==18982== Invalid read of size 4
+==18982==    at 0xBB47AD: pthread_rwlock_unlock (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0x8071B4C: process_server_thread (process_sock.c:722)
+==18982==    by 0x805CE4A: new_thread (gwthread-pthread.c:363)
+==18982==    by 0xBB2370: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0xA19FFD: clone (in /lib/tls/libc-2.3.4.so)
+==18982==  Address 0x43196e8 is 0 bytes inside a block of size 36 free'd
+==18982==    at 0x4005475: free (vg_replace_malloc.c:323)
+==18982==    by 0x8071F00: listening_thread (process_sock.c:832)
+==18982==    by 0x805CE4A: new_thread (gwthread-pthread.c:363)
+==18982==    by 0xBB2370: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0xA19FFD: clone (in /lib/tls/libc-2.3.4.so)
+==18982== 
+==18982== Invalid read of size 4
+==18982==    at 0xBB47B3: pthread_rwlock_unlock (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0x8071B4C: process_server_thread (process_sock.c:722)
+==18982==    by 0x805CE4A: new_thread (gwthread-pthread.c:363)
+==18982==    by 0xBB2370: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0xA19FFD: clone (in /lib/tls/libc-2.3.4.so)
+==18982==  Address 0x4319704 is 28 bytes inside a block of size 36 free'd
+==18982==    at 0x4005475: free (vg_replace_malloc.c:323)
+==18982==    by 0x8071F00: listening_thread (process_sock.c:832)
+==18982==    by 0x805CE4A: new_thread (gwthread-pthread.c:363)
+==18982==    by 0xBB2370: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0xA19FFD: clone (in /lib/tls/libc-2.3.4.so)
+==18982== 
+==18982== Invalid write of size 4
+==18982==    at 0xBB47BF: pthread_rwlock_unlock (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0x8071B4C: process_server_thread (process_sock.c:722)
+==18982==    by 0x805CE4A: new_thread (gwthread-pthread.c:363)
+==18982==    by 0xBB2370: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0xA19FFD: clone (in /lib/tls/libc-2.3.4.so)
+==18982==  Address 0x4319704 is 28 bytes inside a block of size 36 free'd
+==18982==    at 0x4005475: free (vg_replace_malloc.c:323)
+==18982==    by 0x8071F00: listening_thread (process_sock.c:832)
+==18982==    by 0x805CE4A: new_thread (gwthread-pthread.c:363)
+==18982==    by 0xBB2370: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0xA19FFD: clone (in /lib/tls/libc-2.3.4.so)
+==18982== 
+==18982== Invalid read of size 4
+==18982==    at 0xBB47D0: pthread_rwlock_unlock (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0x8071B4C: process_server_thread (process_sock.c:722)
+==18982==    by 0x805CE4A: new_thread (gwthread-pthread.c:363)
+==18982==    by 0xBB2370: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0xA19FFD: clone (in /lib/tls/libc-2.3.4.so)
+==18982==  Address 0x43196fc is 20 bytes inside a block of size 36 free'd
+==18982==    at 0x4005475: free (vg_replace_malloc.c:323)
+==18982==    by 0x8071F00: listening_thread (process_sock.c:832)
+==18982==    by 0x805CE4A: new_thread (gwthread-pthread.c:363)
+==18982==    by 0xBB2370: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0xA19FFD: clone (in /lib/tls/libc-2.3.4.so)
+==18982== 
+==18982== Invalid read of size 4
+==18982==    at 0xBB47D6: pthread_rwlock_unlock (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0x8071B4C: process_server_thread (process_sock.c:722)
+==18982==    by 0x805CE4A: new_thread (gwthread-pthread.c:363)
+==18982==    by 0xBB2370: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0xA19FFD: clone (in /lib/tls/libc-2.3.4.so)
+==18982==  Address 0x43196f8 is 16 bytes inside a block of size 36 free'd
+==18982==    at 0x4005475: free (vg_replace_malloc.c:323)
+==18982==    by 0x8071F00: listening_thread (process_sock.c:832)
+==18982==    by 0x805CE4A: new_thread (gwthread-pthread.c:363)
+==18982==    by 0xBB2370: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0xA19FFD: clone (in /lib/tls/libc-2.3.4.so)
+==18982== 
+==18982== Invalid read of size 4
+==18982==    at 0xBB4800: pthread_rwlock_unlock (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0x8071B4C: process_server_thread (process_sock.c:722)
+==18982==    by 0x805CE4A: new_thread (gwthread-pthread.c:363)
+==18982==    by 0xBB2370: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0xA19FFD: clone (in /lib/tls/libc-2.3.4.so)
+==18982==  Address 0x43196e8 is 0 bytes inside a block of size 36 free'd
+==18982==    at 0x4005475: free (vg_replace_malloc.c:323)
+==18982==    by 0x8071F00: listening_thread (process_sock.c:832)
+==18982==    by 0x805CE4A: new_thread (gwthread-pthread.c:363)
+==18982==    by 0xBB2370: start_thread (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0xA19FFD: clone (in /lib/tls/libc-2.3.4.so)
+==18982== 
+==18982== ERROR SUMMARY: 29 errors from 18 contexts (suppressed: 34 from 2)
+==18982== malloc/free: in use at exit: 76,574 bytes in 84 blocks.
+==18982== malloc/free: 13,392 allocs, 13,308 frees, 865,022 bytes allocated.
+==18982== For counts of detected errors, rerun with: -v
+==18982== searching for pointers to 84 not-freed blocks.
+==18982== checked 33,768,376 bytes.
+==18982== 
+==18982== Thread 1:
+==18982== 
+==18982== 408 bytes in 3 blocks are possibly lost in loss record 8 of 12
+==18982==    at 0x4005D59: calloc (vg_replace_malloc.c:397)
+==18982==    by 0x94271A: _dl_allocate_tls (in /lib/ld-2.3.4.so)
+==18982==    by 0xBB291E: pthread_create@@GLIBC_2.1 (in /lib/tls/libpthread-2.3.4.so)
+==18982==    by 0x404C9AB: my_thread_global_init (in /usr/lib/libmysqlclient_r.so.16.0.0)
+==18982==    by 0x4047A02: my_init (in /usr/lib/libmysqlclient_r.so.16.0.0)
+==18982==    by 0x4041203: mysql_server_init (in /usr/lib/libmysqlclient_r.so.16.0.0)
+==18982==    by 0x4072F18: mysql_init (in /usr/lib/libmysqlclient_r.so.16.0.0)
+==18982==    by 0x805B612: mysql_open_conn (dbpool_mysql.c:84)
+==18982==    by 0x805B982: dbpool_increase (dbpool.c:188)
+==18982==    by 0x805BA8E: dbpool_create (dbpool.c:152)
+==18982==    by 0x805640F: dlr_init_mysql (dlr_mysql.c:939)
+==18982==    by 0x80539B3: dlr_init (dlr.c:313)
+==18982== 
+==18982== LEAK SUMMARY:
+==18982==    definitely lost: 0 bytes in 0 blocks.
+==18982==      possibly lost: 408 bytes in 3 blocks.
+==18982==    still reachable: 76,166 bytes in 81 blocks.
+==18982==         suppressed: 0 bytes in 0 blocks.
+==18982== Reachable blocks (those to which a pointer was found) are not shown.
+==18982== To see them, rerun with: --leak-check=full --show-reachable=yes

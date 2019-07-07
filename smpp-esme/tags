@@ -1,0 +1,349 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ESME	esme.h	/^}ESME;$/;"	t	typeref:struct:__anon5
+ESME_BINDED	esme.h	/^  	ESME_BINDED = 1,	\/*when binded successfully*\/$/;"	e	enum:__anon1
+ESME_DISCONNECT	esme.h	/^	ESME_DISCONNECT = 2,	\/*this is when program is terminated from here and esme is still connected - can be removed*\/$/;"	e	enum:__anon1
+ESME_H	esme.h	2;"	d
+ESME_RX	esme.h	/^}ESME_RX;$/;"	t	typeref:struct:__anon4
+ESME_SEND_UNBIND	esme.h	/^  	ESME_SEND_UNBIND=3,$/;"	e	enum:__anon1
+ESME_SMSC_UNCONNECTED	esme.h	/^	ESME_SMSC_UNCONNECTED = 4 \/*when no smsc are connected for esme tx*\/$/;"	e	enum:__anon1
+ESME_TX	esme.h	/^}ESME_TX;$/;"	t	typeref:struct:__anon3
+ESME_UNCONNECTED	esme.h	/^  	ESME_UNCONNECTED = 0,\/*i ESME is not binded successfully *\/$/;"	e	enum:__anon1
+HANDLER	smpp_esme.c	926;"	d	file:
+HANDLER	smpp_esme.c	937;"	d	file:
+HANDLER_CONN	smpp_esme.c	948;"	d	file:
+HANDLER_CONN	smpp_esme.c	952;"	d	file:
+MSG_BIND_INFO	esme.h	/^}MSG_BIND_INFO;$/;"	t	typeref:struct:__anon6
+O_DELETE	esme.c	176;"	d	file:
+O_DELETE	esme.c	260;"	d	file:
+O_DELETE	esme.c	383;"	d	file:
+O_DELETE	esme.c	392;"	d	file:
+PORT_RECEIVER	server.h	28;"	d
+PORT_TRANRCV	server.h	29;"	d
+PORT_TRANSMITTER	server.h	27;"	d
+PROGRAM_DEAD	server.h	/^    PROGRAM_DEAD = 4,$/;"	e	enum:__anon8
+PROGRAM_FULL	server.h	/^    PROGRAM_FULL = 5         \/* message queue too long, do not accept new messages *\/$/;"	e	enum:__anon8
+PROGRAM_ISOLATED	server.h	/^    PROGRAM_ISOLATED = 1,	\/* do not receive new messgaes from UDP\/SMSC *\/$/;"	e	enum:__anon8
+PROGRAM_RUNNING	server.h	/^    PROGRAM_RUNNING = 0,$/;"	e	enum:__anon8
+PROGRAM_SHUTDOWN	server.h	/^    PROGRAM_SHUTDOWN = 3,$/;"	e	enum:__anon8
+PROGRAM_SUSPENDED	server.h	/^    PROGRAM_SUSPENDED = 2,	\/* do not transfer any messages *\/$/;"	e	enum:__anon8
+SERVER_H	server.h	11;"	d
+SERVER_HTTP_H	httpadmin.h	3;"	d
+SMPP_DEFAULT_CONNECTION_TIMEOUT	server.h	36;"	d
+SMPP_DEFAULT_PRIORITY	server.h	34;"	d
+SMPP_DEFAULT_SHUTDOWN_TIMEOUT	server.h	38;"	d
+SMPP_DEFAULT_VERSION	server.h	33;"	d
+SMPP_DEFAULT_WAITACK	server.h	37;"	d
+SMPP_ENQUIRE_LINK_INTERVAL	server.h	31;"	d
+SMPP_MAX_PENDING_SUBMITS	server.h	32;"	d
+SMPP_SERVER_VERSION	server.h	26;"	d
+SMPP_THROTTLING_SLEEP_TIME	server.h	35;"	d
+SMSC	esme.h	/^}SMSC;$/;"	t	typeref:struct:__anon7
+SMSC_Conn_List	esme.c	/^typedef struct smsc_conn_list SMSC_Conn_List;$/;"	t	typeref:struct:smsc_conn_list	file:
+Smsc_Client	config.c	/^struct Smsc_Client$/;"	s	file:
+Smsc_Client	config.h	/^typedef struct Smsc_Client	Smsc_Client;$/;"	t	typeref:struct:Smsc_Client
+Smsc_Client_List	config.c	/^struct Smsc_Client_List$/;"	s	file:
+Smsc_Client_List	config.h	/^typedef struct Smsc_Client_List Smsc_Client_List;$/;"	t	typeref:struct:Smsc_Client_List
+TEMPCONN	esme.h	/^}TEMPCONN;$/;"	t	typeref:struct:__anon2
+accept_recv_thread	smpp_esme.c	/^static void accept_recv_thread(void *arg)$/;"	f	file:
+accept_trans_thread	smpp_esme.c	/^static void accept_trans_thread(void *arg)$/;"	f	file:
+accept_transrecv_thread	smpp_esme.c	/^static void accept_transrecv_thread(void *arg)$/;"	f	file:
+access_file_name	smpp_esme.c	/^Octstr *access_file_name = NULL;$/;"	v
+account_msg_id	server.h	/^	Octstr *account_msg_id;$/;"	m	struct:msg_deliver
+account_name	config.c	/^	Octstr *account_name;$/;"	m	struct:Smsc_Client	file:
+add_esme	esme.c	/^void add_esme(ESME *esme)$/;"	f
+addr_npi	esme.h	/^	int addr_npi ;\/* - same for tx\/rx*\/$/;"	m	struct:__anon5
+addr_ton	esme.h	/^	int addr_ton;\/*addr ton and npi from bind - same for tx\/rx *\/$/;"	m	struct:__anon5
+address_range	esme.h	/^	Octstr *address_range;\/*optional parameter in bind - same for tx\/rx*\/$/;"	m	struct:__anon5
+allocate_session_id	esme.c	/^int allocate_session_id(List *search_list,int mode)$/;"	f
+allowed_ip	esme.c	/^Octstr *allowed_ip = NULL;$/;"	v
+allowed_mode	config.c	/^	int allowed_mode;\/*1for Tx,2 for Rx, 3 for TRx 4 - TxRx*\/$/;"	m	struct:Smsc_Client	file:
+allowed_prefix	config.c	/^	Octstr *allowed_prefix;$/;"	m	struct:Smsc_Client	file:
+allowed_prefix	esme.c	/^Octstr *allowed_prefix = NULL;$/;"	v
+allowed_prefix	esme.h	/^	Octstr *allowed_prefix;\/* same for tx\/rx*\/$/;"	m	struct:__anon5
+authorise_user	esme.c	/^int authorise_user(SMPP_PDU *pdu,int mode,Smsc_Client_List *translations,TEMPCONN *temp_conn,ESME **esme_ptr)$/;"	f
+bearerbox_host	smpp_esme.c	/^static Octstr *bearerbox_host;$/;"	v	file:
+bind_successful	esme.h	/^    int bind_successful;\/*if bind is unsuccessful*\/$/;"	m	struct:__anon2
+cdma_series	esme.c	/^Octstr *cdma_series = NULL;$/;"	v
+cfg	smpp_esme.c	/^static Cfg *cfg;$/;"	v	file:
+change_esme_logfile	config.c	/^void change_esme_logfile(Smsc_Client_List *trans)$/;"	f
+change_esme_logfile_onsize	config.c	/^void change_esme_logfile_onsize(Smsc_Client_List *trans, long iLogSize)$/;"	f
+check_args	smpp_esme.c	/^static int check_args(int i, int argc, char **argv) $/;"	f	file:
+check_server_connections	smpp_esme.c	/^int check_server_connections(void)$/;"	f
+check_smsc_conn	esme.c	/^int check_smsc_conn(Octstr *username,Smsc_Client_List *translations)$/;"	f
+client_ip	esme.h	/^	Octstr *client_ip;\/*SMPP client IP - different for tx\/rx.*\/$/;"	m	struct:__anon2
+client_ip	esme.h	/^	Octstr *client_ip;\/*SMPP client IP - different for tx\/rx.*\/$/;"	m	struct:__anon3
+client_ip	esme.h	/^	Octstr *client_ip;\/*SMPP client IP - different for tx\/rx.*\/$/;"	m	struct:__anon4
+client_port	esme.h	/^	int client_port;\/*SMPP client port - not much of significance as we already have connected desc - different for tx\/rx.*\/$/;"	m	struct:__anon3
+client_port	esme.h	/^	int client_port;\/*SMPP client port - not much of significance as we already have connected desc - different for tx\/rx.*\/$/;"	m	struct:__anon4
+client_port	esme.h	/^    int client_port;\/*SMPP client port different for tx\/rx.*\/$/;"	m	struct:__anon2
+command	httpadmin.c	/^    const char *command;$/;"	m	struct:httpd_command	file:
+config_filename	smpp_esme.c	/^static Octstr *config_filename;$/;"	v	file:
+conn	esme.h	/^	Connection *conn;$/;"	m	struct:__anon2
+conn	esme.h	/^	Connection *conn;\/*socket descriptor for reading and writing - different for tx\/rx*\/$/;"	m	struct:__anon3
+conn	esme.h	/^	Connection *conn;\/*socket descriptor for reading and writing - different for tx\/rx*\/$/;"	m	struct:__anon4
+conn_mode	esme.c	/^	int conn_mode;$/;"	m	struct:smsc_conn_list	file:
+conn_status	esme.c	/^	int conn_status;$/;"	m	struct:smsc_conn_list	file:
+conn_status	esme.h	/^	int conn_status;$/;"	m	struct:__anon7
+connected_smsc_list_len	esme.c	/^int connected_smsc_list_len()$/;"	f
+convert_addr_from_pdu	esme.c	/^long convert_addr_from_pdu(Octstr *esme_name, Octstr *addr, long ton, long npi)$/;"	f
+create_onetrans	config.c	/^static Smsc_Client *create_onetrans(CfgGroup *grp)$/;"	f	file:
+data_to_write	esme.h	/^	List *data_to_write;$/;"	m	struct:__anon3
+data_to_write	esme.h	/^	List *data_to_write;\/*data to be written on the connection pointer - only for tx*\/$/;"	m	struct:__anon4
+dbbox_client	smpp_esme.c	/^PROCESS_CLIENT *dbbox_client;$/;"	v
+dbbox_connected_to_client	smpp_esme.c	/^int dbbox_connected_to_client = -1;$/;"	v
+dedicated_smsc	config.c	/^	Octstr *dedicated_smsc;$/;"	m	struct:Smsc_Client	file:
+default_series	esme.c	/^Octstr *default_series = NULL;$/;"	v
+denied_ip	esme.c	/^Octstr *denied_ip = NULL;$/;"	v
+denied_prefix	config.c	/^	Octstr *denied_prefix;$/;"	m	struct:Smsc_Client	file:
+denied_prefix	esme.c	/^Octstr *denied_prefix = NULL;$/;"	v
+denied_prefix	esme.h	/^	Octstr *denied_prefix;\/* same for tx\/rx*\/$/;"	m	struct:__anon5
+destroy_keyword_list	config.c	/^static void destroy_keyword_list(void *list)$/;"	f	file:
+destroy_onetrans	config.c	/^static void destroy_onetrans(void *p) $/;"	f	file:
+dict	config.c	/^    Dict *dict;		$/;"	m	struct:Smsc_Client_List	file:
+display_smsc_info	esme.c	/^void display_smsc_info(void)$/;"	f
+enquire_interval	smpp_esme.c	/^static long enquire_interval = 1; \/* Measured in messages, not time. *\/$/;"	v	file:
+enquire_link_interval	config.c	/^	long enquire_link_interval;$/;"	m	struct:Smsc_Client	file:
+enquire_link_interval	esme.h	/^	long enquire_link_interval; \/* same for tx\/rx*\/$/;"	m	struct:__anon5
+esme	esme.h	/^	ESME *esme;$/;"	m	struct:__anon6
+esme_destroy	esme.c	/^void esme_destroy(ESME *esme,int mode,int session_id)$/;"	f
+esme_init	esme.c	/^void esme_init()$/;"	f
+esme_list	esme.c	/^static List *esme_list;$/;"	v	file:
+esme_list_len	esme.c	/^int esme_list_len()$/;"	f
+esme_list_lock	esme.c	/^static RWLock esme_list_lock;$/;"	v	file:
+esme_shutdown	esme.c	/^void esme_shutdown(int shutdown)$/;"	f
+esmerx	esme.h	/^	ESME_RX *esmerx;$/;"	m	struct:__anon5
+esmetx	esme.h	/^	ESME_TX *esmetx;$/;"	m	struct:__anon5
+extract_connection	esme.c	/^Connection* extract_connection(Octstr* esme_id)$/;"	f
+extract_esme	esme.c	/^void* extract_esme(Octstr* esme_id,int *mode)$/;"	f
+extract_log_idx	esme.c	/^int extract_log_idx(Octstr *account_name)$/;"	f
+first_from_bb	smpp_esme.c	/^static time_t first_from_bb = (time_t) -1;$/;"	v	file:
+first_to_esme	smpp_esme.c	/^static time_t first_to_esme = (time_t) -1;$/;"	v	file:
+forward_client	smpp_esme.c	/^PROCESS_CLIENT *forward_client;$/;"	v
+function	httpadmin.c	/^    Octstr * (*function)(List *cgivars, int status_type);$/;"	m	struct:httpd_command	file:
+get_esme	esme.c	/^ESME *get_esme(long pos)$/;"	f
+get_server_status_name	httpadmin.c	/^char* get_server_status_name(sig_atomic_t program_status)$/;"	f
+get_session_str	esme.c	/^void *get_session_str(ESME *esme,int mode,int session_id)$/;"	f
+get_smpp_client	config.c	/^Smsc_Client *get_smpp_client(Smsc_Client_List *trans,long pos)$/;"	f
+giLogSize	smpp_esme.c	/^long giLogSize;$/;"	v
+giManagelogInterval	smpp_esme.c	/^int giManagelogInterval;$/;"	v
+global_q_limit	smpp_esme.c	/^int global_q_limit = -1;$/;"	v
+gsm_series	esme.c	/^Octstr *gsm_series = NULL;$/;"	v
+ha_allow_ip	httpadmin.c	/^static Octstr *ha_allow_ip;$/;"	v	file:
+ha_deny_ip	httpadmin.c	/^static Octstr *ha_deny_ip;$/;"	v	file:
+ha_interface	httpadmin.c	/^static Octstr *ha_interface;$/;"	v	file:
+ha_password	httpadmin.c	/^static Octstr *ha_password;$/;"	v	file:
+ha_port	httpadmin.c	/^static long	ha_port;$/;"	v	file:
+ha_status_pw	httpadmin.c	/^static Octstr *ha_status_pw;$/;"	v	file:
+handle_bind_receiver	smpp_esme.c	/^static MSG_BIND_INFO *handle_bind_receiver(TEMPCONN *temp_conn, SMPP_PDU *pdu)$/;"	f	file:
+handle_bind_transceiver	smpp_esme.c	/^static MSG_BIND_INFO *handle_bind_transceiver(TEMPCONN *temp_conn, SMPP_PDU *pdu)$/;"	f	file:
+handle_bind_transmitter	smpp_esme.c	/^static MSG_BIND_INFO *handle_bind_transmitter(TEMPCONN *temp_conn, SMPP_PDU *pdu)$/;"	f	file:
+handle_cancel_sm	smpp_esme.c	/^SMPP_PDU *handle_cancel_sm(ESME *esme, SMPP_PDU *pdu,int mode,void *session_str,int session_id)$/;"	f
+handle_deliver_sm_resp	smpp_esme.c	/^static SMPP_PDU *handle_deliver_sm_resp(ESME *esme, SMPP_PDU *pdu,int mode,void *session_str,int session_id)$/;"	f	file:
+handle_enquire_link	smpp_esme.c	/^static SMPP_PDU *handle_enquire_link(ESME *esme, SMPP_PDU *pdu,int mode,void *session_str,int session_id)$/;"	f	file:
+handle_enquire_link_resp	smpp_esme.c	/^static SMPP_PDU *handle_enquire_link_resp(ESME *esme, SMPP_PDU *pdu,int mode,void *session_str,int session_id)$/;"	f	file:
+handle_generic_nack	smpp_esme.c	/^static SMPP_PDU *handle_generic_nack(ESME *esme, SMPP_PDU *pdu,int mode,void *session_str,int session_id)$/;"	f	file:
+handle_pdu	smpp_esme.c	/^static void handle_pdu(ESME *esme, SMPP_PDU *pdu,int mode,void *session_str,int thread_session_id)$/;"	f	file:
+handle_pdu_bind	smpp_esme.c	/^static ESME* handle_pdu_bind(TEMPCONN *temp_conn, SMPP_PDU *pdu)$/;"	f	file:
+handle_query_sm	smpp_esme.c	/^SMPP_PDU *handle_query_sm(ESME *esme, SMPP_PDU *pdu,int mode,void *session_str,int session_id)$/;"	f
+handle_replace_sm	smpp_esme.c	/^SMPP_PDU *handle_replace_sm(ESME *esme, SMPP_PDU *pdu,int mode,void *session_str,int session_id)$/;"	f
+handle_request	smpp_esme.c	/^void handle_request(Conn_Msg *msg,PROCESS_CLIENT *process_client)$/;"	f
+handle_submit_sm	smpp_esme.c	/^static SMPP_PDU *handle_submit_sm(ESME *esme, SMPP_PDU *pdu,int mode,void *session_str,int session_id)$/;"	f	file:
+handle_unbind	smpp_esme.c	/^SMPP_PDU *handle_unbind(ESME *esme, SMPP_PDU *pdu,int mode,void *session_str,int session_id)$/;"	f
+handle_unbind_resp	smpp_esme.c	/^static SMPP_PDU *handle_unbind_resp(ESME *esme, SMPP_PDU *pdu,int mode,void *session_str,int session_id)$/;"	f	file:
+handler	smpp_esme.c	/^    SMPP_PDU *(*handler)(ESME *, SMPP_PDU *,int mode,void *session_str,int session_id);$/;"	m	struct:__anon9	file:
+handler_conn	smpp_esme.c	/^         MSG_BIND_INFO *(*handler_conn)(TEMPCONN *, SMPP_PDU *);$/;"	m	struct:__anon10	file:
+handlers	smpp_esme.c	/^handlers[] = $/;"	v	typeref:struct:__anon9	file:
+handlers_conn	smpp_esme.c	/^     handlers_conn[] =$/;"	v	typeref:struct:__anon10	file:
+httpadmin_run	httpadmin.c	/^static void httpadmin_run(void *arg)$/;"	f	file:
+httpadmin_running	httpadmin.c	/^static volatile sig_atomic_t httpadmin_running;$/;"	v	file:
+httpadmin_start	httpadmin.c	/^int httpadmin_start(Cfg *cfg)$/;"	f
+httpadmin_stop	httpadmin.c	/^void httpadmin_stop(void)$/;"	f
+httpd_check_authorization	httpadmin.c	/^static Octstr *httpd_check_authorization(List *cgivars, int status)$/;"	f	file:
+httpd_check_status	httpadmin.c	/^static Octstr *httpd_check_status(void)$/;"	f	file:
+httpd_command	httpadmin.c	/^static struct httpd_command {$/;"	s	file:
+httpd_commands	httpadmin.c	/^} httpd_commands[] = {$/;"	v	typeref:struct:httpd_command	file:
+httpd_esme_status	httpadmin.c	/^Octstr *httpd_esme_status(List *cgivars, int status_type)$/;"	f
+httpd_esme_stop	httpadmin.c	/^Octstr *httpd_esme_stop(List *cgivars, int status_type)$/;"	f
+httpd_serve	httpadmin.c	/^static void httpd_serve(HTTPClient *client, Octstr *ourl, List *headers,$/;"	f	file:
+httpd_server_status	httpadmin.c	/^Octstr *httpd_server_status(List *cgivars, int status_type)$/;"	f
+httpd_smpp_server_shutdown	httpadmin.c	/^Octstr *httpd_smpp_server_shutdown(List *cgivars, int status_type)$/;"	f
+httpd_version	httpadmin.c	/^static Octstr *httpd_version(List *cgivars, int status_type)$/;"	f	file:
+init_connect_ip	esme.c	/^void init_connect_ip(Cfg *cfg)$/;"	f
+init_log_file	esme.c	/^long init_log_file(Octstr *username, Smsc_Client_List *translations,int mode)$/;"	f
+int_series	esme.c	/^Octstr *int_series = NULL;$/;"	v
+interface_version	esme.h	/^	int interface_version;\/*smpp version which clinet follows - same for tx\/rx*\/$/;"	m	struct:__anon5
+is_present_esme	esme.c	/^ESME* is_present_esme(Octstr *system_id)$/;"	f
+is_smsc_present	esme.c	/^int is_smsc_present(void)$/;"	f
+last_from_esme	smpp_esme.c	/^static time_t last_from_esme = (time_t) -1;$/;"	v	file:
+last_to_bb	smpp_esme.c	/^static time_t last_to_bb = (time_t) -1;$/;"	v	file:
+last_to_esme	smpp_esme.c	/^static time_t last_to_esme = (time_t) -1;$/;"	v	file:
+list	config.c	/^	List *list;$/;"	m	struct:Smsc_Client_List	file:
+listen_port	esme.h	/^	int listen_port;\/*port from which bind was received - different for tx\/rx.*\/$/;"	m	struct:__anon3
+listen_port	esme.h	/^	int listen_port;\/*port from which bind was received - different for tx\/rx.*\/$/;"	m	struct:__anon4
+listen_port	esme.h	/^    int listen_port;\/*port from which bind was received - different for tx\/rx.*\/$/;"	m	struct:__anon2
+lock_esme_list	esme.c	/^void lock_esme_list()$/;"	f
+log_file	config.c	/^	Octstr *log_file;$/;"	m	struct:Smsc_Client	file:
+log_file	esme.h	/^	Octstr *log_file;\/*same for tx\/rx*\/$/;"	m	struct:__anon5
+log_file_index	smpp_esme.c	/^long log_file_index;$/;"	v
+log_idx	config.c	/^	int log_idx;$/;"	m	struct:Smsc_Client	file:
+log_idx	esme.h	/^	int log_idx;    \/* index position within the global logfiles[] array in gwlib\/log.c - same for tx\/rx*\/$/;"	m	struct:__anon5
+log_idx	esme.h	/^    long log_idx;\/*This is required cos we want to log even bind responses*\/$/;"	m	struct:__anon2
+log_level	config.c	/^	long log_level;$/;"	m	struct:Smsc_Client	file:
+log_level	esme.h	/^	long log_level;\/*same for tx\/rx*\/$/;"	m	struct:__anon5
+log_smsc_info	esme.c	/^void log_smsc_info(void)$/;"	f
+logfile	smpp_esme.c	/^static Octstr *logfile;$/;"	v	file:
+main	smpp_esme.c	/^int main(int argc, char **argv)$/;"	f
+manage_log	smpp_esme.c	/^void manage_log(Cfg *cfg)$/;"	f
+manage_thread	smpp_esme.c	/^void manage_thread(Cfg *cfg)$/;"	f
+max_rx_sessions	config.c	/^	long max_rx_sessions;$/;"	m	struct:Smsc_Client	file:
+max_submits	config.c	/^	long max_submits;$/;"	m	struct:Smsc_Client	file:
+max_submits	esme.h	/^   long max_submits; \/*max no of submits allowed when smsc are unconnected, to accomodate -1 as well*\/$/;"	m	struct:__anon5
+max_submits_unconnect	config.c	/^	long max_submits_unconnect;$/;"	m	struct:Smsc_Client	file:
+max_submits_unconnect	esme.h	/^   long max_submits_unconnect; \/*max no of submits allowed when smsc are unconnected, to accomodate -1 as well*\/$/;"	m	struct:__anon5
+max_submits_unct_account	esme.c	/^long max_submits_unct_account(ESME *esme,int lock)$/;"	f
+max_to_esme	smpp_esme.c	/^static long max_to_esme;$/;"	v	file:
+max_tx_sessions	config.c	/^	long max_tx_sessions;$/;"	m	struct:Smsc_Client	file:
+message_id_counter	smpp_esme.c	/^static Counter *message_id_counter;$/;"	v	file:
+mis_db_insert	smpp_esme.c	/^int mis_db_insert(	Octstr *account_name,$/;"	f
+mode	esme.h	/^	int mode;$/;"	m	struct:__anon2
+mode	esme.h	/^	int mode;$/;"	m	struct:__anon3
+mode	esme.h	/^	int mode;$/;"	m	struct:__anon4
+mode	esme.h	/^	int mode;\/*In which mode this ESME account is binded 1-TX,2-RX,3-TRx*\/$/;"	m	struct:__anon5
+msg_deliver	server.h	/^struct msg_deliver$/;"	s
+msg_received	esme.h	/^	Counter *msg_received;\/*counter for smsc msg id for that client - only for tx*\/$/;"	m	struct:__anon3
+msg_rejected	esme.h	/^	Counter *msg_rejected;\/*messages rejected by the server - only for tx*\/$/;"	m	struct:__anon3
+msg_sent	esme.h	/^	Counter *msg_sent;\/*Number of deliver sm sent to the ESME*\/$/;"	m	struct:__anon4
+msg_sent	esme.h	/^	Counter *msg_sent;\/*messages successfully written on the forward queue - only for tx*\/$/;"	m	struct:__anon3
+names	config.c	/^    Dict *names;$/;"	m	struct:Smsc_Client_List	file:
+num_from_bearerbox	smpp_esme.c	/^static Counter *num_from_bearerbox;$/;"	v	file:
+num_from_esme	smpp_esme.c	/^static Counter *num_from_esme;$/;"	v	file:
+num_handlers	smpp_esme.c	/^static int num_handlers = sizeof(handlers) \/ sizeof(handlers[0]);$/;"	v	file:
+num_handlers_conn	smpp_esme.c	/^static int num_handlers_conn = sizeof(handlers_conn) \/ sizeof(handlers_conn[0]);$/;"	v	file:
+num_to_bearerbox	smpp_esme.c	/^static Counter *num_to_bearerbox;$/;"	v	file:
+num_to_esme	smpp_esme.c	/^static Counter *num_to_esme;$/;"	v	file:
+os	server.h	/^	Octstr *os;$/;"	m	struct:msg_deliver
+password	config.c	/^	Octstr *password;$/;"	m	struct:Smsc_Client	file:
+password	esme.h	/^	Octstr *password;\/*password for the account - - same for tx\/rx*\/$/;"	m	struct:__anon5
+pending_deliver_sm	smpp_esme.c	/^Dict *pending_deliver_sm;$/;"	v
+port_for_smsbox	smpp_esme.c	/^static int port_for_smsbox;$/;"	v	file:
+preferred_smsc	config.c	/^	List *preferred_smsc;$/;"	m	struct:Smsc_Client	file:
+prepare_smsc_list	esme.c	/^void prepare_smsc_list(Conn_Msg *msg)$/;"	f
+print_esme_status	esme.c	/^Octstr *print_esme_status(int status_type)$/;"	f
+print_server_status	smpp_esme.c	/^Octstr *print_server_status(int status_type)$/;"	f
+print_status_configured_esme	config.c	/^Octstr *print_status_configured_esme(int status_type,Smsc_Client_List *trans)$/;"	f
+process_program_status	smpp_esme.c	/^volatile enum process_program_status process_program_status = starting_up;$/;"	v	typeref:enum:process_program_status
+process_start_time	smpp_esme.c	/^static time_t process_start_time;$/;"	v	file:
+program_status	smpp_esme.c	/^volatile sig_atomic_t program_status;$/;"	v
+quit	esme.h	/^	int quit;\/*when set tells that ESME has fully disconencted and we can shutdown esme now - different for tx\/rx*\/$/;"	m	struct:__anon3
+quit	esme.h	/^	int quit;\/*when set tells that ESME has fully disconencted and we can shutdown esme now - different for tx\/rx*\/$/;"	m	struct:__anon4
+quit	smpp_esme.c	/^static void quit(void)$/;"	f	file:
+quitting	smpp_esme.c	/^static int quitting = 0;$/;"	v	file:
+read_pdu	smpp_esme.c	/^static int read_pdu(Octstr *conn_name, Connection *conn, long *len, SMPP_PDU **pdu) $/;"	f	file:
+receive_smpp_thread	smpp_esme.c	/^static void receive_smpp_thread(void *arg)$/;"	f	file:
+recv_port	smpp_esme.c	/^long recv_port;$/;"	v
+report_versions	version.c	/^void report_versions(const char *boxname)$/;"	f
+resp	esme.h	/^	SMPP_PDU *resp;      \/\/Compulsory field	$/;"	m	struct:__anon6
+reverse_client	smpp_esme.c	/^PROCESS_CLIENT *reverse_client;$/;"	v
+rout_pdu	esme.c	/^int rout_pdu(Smsc_Client_List *translations,Octstr *dest_addr,Octstr *username, Octstr **ospreferred_smsc,Octstr **osallowed_smsc)$/;"	f
+rx_allowed	config.c	/^	int rx_allowed;$/;"	m	struct:Smsc_Client	file:
+rx_esme	esme.h	/^	List *rx_esme;				\/*List storing data for rx conncted sessions*\/$/;"	m	struct:__anon5
+rx_log_file	config.c	/^	Octstr *rx_log_file;$/;"	m	struct:Smsc_Client	file:
+rx_log_file	esme.h	/^	Octstr *rx_log_file;$/;"	m	struct:__anon5
+rx_log_idx	config.c	/^	int rx_log_idx;$/;"	m	struct:Smsc_Client	file:
+rx_log_idx	esme.h	/^	int rx_log_idx;$/;"	m	struct:__anon5
+rx_thread_id	esme.h	/^	int rx_thread_id;\/*Thread id for rx thread*\/$/;"	m	struct:__anon5
+save_dbbox_q_msgs	smpp_esme.c	/^void save_dbbox_q_msgs()$/;"	f
+send_enquire_link	smpp_esme.c	/^static void send_enquire_link(int mode,Octstr *conn_name,Connection *conn, long *last_sent,long enquire_link_interval,Counter **seq_counter,int session_id)$/;"	f	file:
+send_msg_dbbox_server	smpp_esme.c	/^void send_msg_dbbox_server(Conn_Msg *msg,int mode)$/;"	f
+send_unbind	smpp_esme.c	/^static void send_unbind(int mode,Octstr *conn_name,Connection *conn,Counter **seq_counter,int session_id)$/;"	f	file:
+seq_number_counter	esme.h	/^	Counter *seq_number_counter;\/*different for tx\/rx*\/$/;"	m	struct:__anon3
+seq_number_counter	esme.h	/^	Counter *seq_number_counter;\/*different for tx\/rx*\/$/;"	m	struct:__anon4
+seq_number_counter	smpp_esme.c	/^static Counter *seq_number_counter;$/;"	v	file:
+server_print_status_configured_esme	smpp_esme.c	/^Octstr *server_print_status_configured_esme(int status_type)$/;"	f
+session_id	esme.h	/^	int session_id;$/;"	m	struct:__anon2
+session_id	esme.h	/^	int session_id;$/;"	m	struct:__anon3
+session_id	esme.h	/^	int session_id;$/;"	m	struct:__anon4
+setup_signal_handlers	smpp_esme.c	/^static void setup_signal_handlers(void)$/;"	f	file:
+shutdown_smpp_server	smpp_esme.c	/^void shutdown_smpp_server()$/;"	f
+signal_handler	smpp_esme.c	/^static void signal_handler(int signum)$/;"	f	file:
+smpp_client_add_cfg	config.c	/^int smpp_client_add_cfg(Smsc_Client_List *trans, Cfg *cfg)$/;"	f
+smpp_client_add_one	config.c	/^int smpp_client_add_one(Smsc_Client_List *trans, CfgGroup *grp)$/;"	f
+smpp_client_allowed_prefix	config.c	/^Octstr *smpp_client_allowed_prefix(Smsc_Client *ot)$/;"	f
+smpp_client_create	config.c	/^Smsc_Client_List *smpp_client_create(void)$/;"	f
+smpp_client_dedicated_smsc	config.c	/^Octstr *smpp_client_dedicated_smsc(Smsc_Client *ot)$/;"	f
+smpp_client_denied_prefix	config.c	/^Octstr *smpp_client_denied_prefix(Smsc_Client *ot)$/;"	f
+smpp_client_destroy	config.c	/^void smpp_client_destroy(Smsc_Client_List *trans) $/;"	f
+smpp_client_enquire_link_interval	config.c	/^long smpp_client_enquire_link_interval(Smsc_Client *ot)$/;"	f
+smpp_client_find_username	config.c	/^Smsc_Client *smpp_client_find_username(Smsc_Client_List *trans,Octstr *name)$/;"	f
+smpp_client_get_max_rx_sessions	config.c	/^int smpp_client_get_max_rx_sessions(Smsc_Client *ot)$/;"	f
+smpp_client_get_max_submits	config.c	/^long smpp_client_get_max_submits(Smsc_Client *ot)$/;"	f
+smpp_client_get_max_submits_unconnect	config.c	/^long smpp_client_get_max_submits_unconnect(Smsc_Client *ot)$/;"	f
+smpp_client_get_max_tx_sessions	config.c	/^int smpp_client_get_max_tx_sessions(Smsc_Client *ot)$/;"	f
+smpp_client_get_rxmode	config.c	/^int smpp_client_get_rxmode(Smsc_Client *ot)$/;"	f
+smpp_client_len	config.c	/^long smpp_client_len(Smsc_Client_List *trans)$/;"	f
+smpp_client_log_file	config.c	/^Octstr *smpp_client_log_file(Smsc_Client *ot)$/;"	f
+smpp_client_log_idx	config.c	/^int smpp_client_log_idx(Smsc_Client *ot)$/;"	f
+smpp_client_log_level	config.c	/^int smpp_client_log_level(Smsc_Client *ot)$/;"	f
+smpp_client_mode	config.c	/^int smpp_client_mode(Smsc_Client *ot)$/;"	f
+smpp_client_password	config.c	/^Octstr *smpp_client_password(Smsc_Client *ot)$/;"	f
+smpp_client_preferred_smsc	config.c	/^List *smpp_client_preferred_smsc(Smsc_Client *ot)$/;"	f
+smpp_client_rx_log_file	config.c	/^Octstr *smpp_client_rx_log_file(Smsc_Client *ot)$/;"	f
+smpp_client_rx_log_idx	config.c	/^int smpp_client_rx_log_idx(Smsc_Client *ot)$/;"	f
+smpp_client_username	config.c	/^Octstr *smpp_client_username(Smsc_Client *ot)$/;"	f
+smpp_client_validfrom	config.c	/^Octstr *smpp_client_validfrom(Smsc_Client *ot)$/;"	f
+smpp_client_validto	config.c	/^Octstr *smpp_client_validto(Smsc_Client *ot)$/;"	f
+smpp_server_shutdown	smpp_esme.c	/^void smpp_server_shutdown()$/;"	f
+smsc_conn_create	esme.c	/^SMSC_Conn_List* smsc_conn_create(Octstr *smsc_id,int conn_status,Octstr *smsc_type,int conn_mode)$/;"	f
+smsc_conn_list	esme.c	/^struct smsc_conn_list$/;"	s	file:
+smsc_conn_status	esme.c	/^int smsc_conn_status(Octstr *smsc_id)$/;"	f
+smsc_destroy	esme.c	/^void smsc_destroy(void *item)$/;"	f
+smsc_id	esme.c	/^	Octstr *smsc_id;$/;"	m	struct:smsc_conn_list	file:
+smsc_id	esme.h	/^	Octstr *smsc_id;$/;"	m	struct:__anon7
+smsc_id	server.h	/^	Octstr *smsc_id;$/;"	m	struct:msg_deliver
+smsc_init	esme.c	/^void smsc_init(void)$/;"	f
+smsc_list	esme.c	/^static List *smsc_list;$/;"	v	file:
+smsc_list_len	esme.c	/^int smsc_list_len()$/;"	f
+smsc_list_lock	esme.c	/^static RWLock smsc_list_lock;$/;"	v	file:
+smsc_msg_id	server.h	/^	Octstr *smsc_msg_id;$/;"	m	struct:msg_deliver
+smsc_q_limit	smpp_esme.c	/^long smsc_q_limit = -1;$/;"	v
+smsc_shutdown	esme.c	/^void smsc_shutdown(void)$/;"	f
+smsc_source_addr	smpp_esme.c	/^static Octstr *smsc_source_addr;$/;"	v	file:
+smsc_system_id	smpp_esme.c	/^static Octstr *smsc_system_id;$/;"	v	file:
+smsc_type	esme.c	/^	Octstr *smsc_type;$/;"	m	struct:smsc_conn_list	file:
+start_time	esme.h	/^	time_t start_time;\/*time when bind is received from the esme-different for tx\/rx*\/$/;"	m	struct:__anon3
+start_time	esme.h	/^	time_t start_time;\/*time when bind is received from the esme-different for tx\/rx*\/$/;"	m	struct:__anon4
+start_time	smpp_esme.c	/^static time_t start_time = (time_t) -1;$/;"	v	file:
+status	esme.h	/^	int status;\/*current esme status - unconnected,binded,sending unbind - different for tx\/rx*\/$/;"	m	struct:__anon3
+status	esme.h	/^	int status;\/*current esme status - unconnected,binded,sending unbind - different for tx\/rx*\/$/;"	m	struct:__anon4
+stop_esme	esme.c	/^int stop_esme(Octstr *esme)$/;"	f
+submits_unconnect	esme.h	/^	Counter *submits_unconnect;\/*total number of submits when smsc are disconnected*\/$/;"	m	struct:__anon3
+system_id	esme.h	/^	Octstr *system_id;\/*username with which esme logs in - same for tx\/rx*\/$/;"	m	struct:__anon5
+system_thread	smpp_esme.c	/^void system_thread(void *arg)$/;"	f
+system_type	esme.h	/^	Octstr *system_type;\/*system type - optional parameter in bind - - same for tx\/rx*\/$/;"	m	struct:__anon5
+tempconn_create	esme.c	/^TEMPCONN *tempconn_create(Connection *conn, const char *client_ip,int client_port,int listen_port,int mode)$/;"	f
+tempconn_destroy	esme.c	/^void tempconn_destroy(TEMPCONN *temp_conn)$/;"	f
+thread_id	esme.h	/^	long thread_id;$/;"	m	struct:__anon3
+thread_id	esme.h	/^	long thread_id;\/*thread id of the receive smpp threas used for waking up the thread-different for tx\/rx*\/$/;"	m	struct:__anon4
+trans_port	smpp_esme.c	/^long trans_port;$/;"	v
+trans_recv_port	smpp_esme.c	/^long trans_recv_port;$/;"	v
+translations	smpp_esme.c	/^static Smsc_Client_List *translations = NULL;\/*stores the smpp-client- list as read by config file*\/$/;"	v	file:
+tx_esme	esme.h	/^	List *tx_esme;				\/*List storing data for tx connected sessions*\/$/;"	m	struct:__anon5
+tx_thread_id	esme.h	/^	int tx_thread_id;\/*Thread id for tx thread*\/$/;"	m	struct:__anon5
+type	smpp_esme.c	/^         unsigned long type;$/;"	m	struct:__anon10	file:
+type	smpp_esme.c	/^    unsigned long type;$/;"	m	struct:__anon9	file:
+unlock_esme_list	esme.c	/^void unlock_esme_list()$/;"	f
+update_esme_conn	esme.c	/^void update_esme_conn(Smsc_Client_List *translations)$/;"	f
+update_info	esme.c	/^void update_info(SMPP_PDU *pdu,Octstr *account_msg_id,int *status)$/;"	f
+update_smsc_list	esme.c	/^void update_smsc_list(Conn_Msg *msg)$/;"	f
+validfrom	config.c	/^	Octstr *validfrom;$/;"	m	struct:Smsc_Client	file:
+validto	config.c	/^	Octstr *validto;$/;"	m	struct:Smsc_Client	file:
+verify_config_para	config.c	/^int verify_config_para(Smsc_Client_List *trans)$/;"	f
+verify_pdu_para	esme.c	/^long verify_pdu_para(ESME *esme, SMPP_PDU *pdu, Octstr **dest_addr,Octstr **source_addr)$/;"	f
+version_report_string	version.c	/^Octstr *version_report_string(const char *boxname)$/;"	f
+wait_msg_recv	smpp_esme.c	/^void wait_msg_recv(void *arg)$/;"	f
+write_esme_conn	esme.c	/^void write_esme_conn(ESME *esme,int mode,void *session_str,int thread_session_id)$/;"	f
