@@ -1,7 +1,6 @@
 # SMPP_SERVER
 
 # Overview
-Efficient, scalable, rock-solid, and flexible C implementation of the Short Messaging Peer to Peer Protocol (SMPP).
 
 Twitter exclusively relies on this library for its global SMS infrastructure.
 
